@@ -1,0 +1,20 @@
+{
+  "xac_nhan": {
+    "age": 21,
+    "sex": "Nữ",
+    "life_stage": "người trẻ",
+    "education": "THPT",
+    "occupation": "Thất nghiệp / tìm việc",
+    "location": "Đô Thị, Thành Phố Hải Phòng, Việt Nam",
+    "marital_status": "Độc thân",
+    "family_context": "chưa lập gia đình",
+    "skills_summary": "Dù chưa đi làm, Phương Hạnh vẫn tự trang bị cho mình những kỹ năng cơ bản như viết lách, thiết kế đơn giản trên máy tính, và vận hành các thiết bị văn phòng như máy in, máy quét.  Cô cũng thành thạo trong việc sử dụng mạng xã hội để tiếp cận người dùng và theo dõi các xu hướng mới.",
+    "professional": "Dù chưa đi làm, Phương Hạnh tự trang bị cho mình các kỹ năng như viết lách và thiết kế đồ họa dựa trên những kiến thức từ trường học.",
+    "statement": "người trẻ nữ, 21 tuổi, chưa lập gia đình, trình độ thpt, nghề nghiệp: thất nghiệp / tìm việc, sống tại đô thị Thành Phố Hải Phòng, Việt Nam. Chuyên môn: Dù chưa đi làm, Phương Hạnh vẫn tự trang bị cho mình những kỹ năng cơ bản như viết lách, thiết kế đơn giản trên máy tính, và vận hành các thiết bị văn phòng như máy in, máy quét.  Cô cũng thành thạo trong việc sử dụng mạng xã hội để tiếp cận người dùng và theo dõi các xu hướng mới. Bối cảnh nghề nghiệp: Dù chưa đi làm, Phương Hạnh tự trang bị cho mình các kỹ năng như viết lách và thiết kế đồ họa dựa trên những kiến thức từ trường học."
+  },
+  "gia_tuong": {
+    "Bổn phận": "Có bổn phận tự chủ về tài chính và phát triển bản thân và tìm kiếm việc làm phù hợp và duy trì cuộc sống trong thời gian chờ đợi.",
+    "Mong muốn": "Phương Hạnh mong muốn tìm được một công việc liên quan đến truyền thông hoặc marketing, nơi cô có thể tận dụng khả năng giao tiếp và sáng tạo của mình. Cô cũng muốn học hỏi thêm về lĩnh vực thiết kế đồ họa để có thể phát triển bản thân trong tương lai.",
+    "Niềm tin": "Tin rằng bản thân còn nhiều cơ hội và khả năng để phát triển và khẳng định bản thân, đặc biệt khi có sự hỗ trợ từ gia đình và cộng đồng xung quanh."
+  }
+}

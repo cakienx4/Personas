@@ -1,0 +1,48 @@
+{
+  "uuid": "e9c78bb0658d48ad81d7ef7b1ed37471",
+  "raw_fields": {
+    "uuid": "e9c78bb0658d48ad81d7ef7b1ed37471",
+    "professional_persona": "Dù chưa đi làm, Phương Hạnh tự trang bị cho mình các kỹ năng như viết lách và thiết kế đồ họa dựa trên những kiến thức từ trường học. Cô mong muốn tìm một công việc trong lĩnh vực truyền thông, có thể phát huy khả năng sáng tạo và giao tiếp tốt.",
+    "sports_persona": "Phương Hạnh thích chơi bóng chuyền và tham gia các buổi tập thể dục nhóm, đặc biệt vào các ngày cuối tuần.",
+    "arts_persona": "Phương Hạnh tham gia các buổi giao lưu văn hóa, đặc biệt là lễ hội hoa phượng đỏ và các chương trình hát chèo truyền thống.",
+    "travel_persona": "Phương Hạnh thích khám phá các điểm du lịch tại Hải Phòng như Đồ Sơn, Cát Bà, và có kế hoạch đi du lịch trong nước vào cuối năm.",
+    "culinary_persona": "Phương Hạnh yêu thích ẩm thực Hải Phòng, đặc biệt là bánh đa cua và nem cua bể, và thường tự nấu ăn tại nhà.",
+    "persona": "Lê Phương Hạnh là cô gái 21 tuổi, sống ở Hải Phòng, đam mê văn hóa và truyền thống dân tộc. Phương Hạnh có tinh thần sáng tạo và thích khám phá mọi thứ mới mẻ.",
+    "cultural_background": "Lê Phương Hạnh là một cô gái trẻ sống tại một khu nhà phố cổ ở trung tâm Hải Phòng, nơi vẫn còn giữ được nhiều truyền thống văn hóa. Gần nhà cô, thường xuyên tổ chức lễ hội hoa phượng đỏ vào mùa hè, là hoạt động giải trí đặc trưng của người Hải Phòng. Cô cũng có thói quen thưởng thức món bánh đa cua, một ẩm thực đặc sản của khu vực, vào những ngày cuối tuần.",
+    "skills_and_expertise": "Dù chưa đi làm, Phương Hạnh vẫn tự trang bị cho mình những kỹ năng cơ bản như viết lách, thiết kế đơn giản trên máy tính, và vận hành các thiết bị văn phòng như máy in, máy quét. Cô cũng thành thạo trong việc sử dụng mạng xã hội để tiếp cận người dùng và theo dõi các xu hướng mới.",
+    "skills_and_expertise_list": "['Viết lách và biên tập nội dung', 'Thiết kế đơn giản trên phần mềm đồ họa', 'Sử dụng và vận hành máy văn phòng', 'Quản trị mạng xã hội', 'Đọc và phân tích dữ liệu cơ bản']",
+    "hobbies_and_interests": "Phương Hạnh thích tham gia các buổi giao lưu văn hóa, đặc biệt là khi có các nghệ sĩ biểu diễn hát chèo trong khu vực. Cô cũng thường tham gia các hoạt động thể thao, như bóng chuyền, để rèn luyện sức khỏe và làm quen với nhiều người mới.",
+    "hobbies_and_interests_list": "['Xem hát chèo', 'Tham gia lễ hội hoa phượng', 'Chơi bóng chuyền', 'Thưởng thức món Hải Phòng']",
+    "career_goals_and_ambitions": "Phương Hạnh mong muốn tìm được một công việc liên quan đến truyền thông hoặc marketing, nơi cô có thể tận dụng khả năng giao tiếp và sáng tạo của mình. Cô cũng muốn học hỏi thêm về lĩnh vực thiết kế đồ họa để có thể phát triển bản thân trong tương lai.",
+    "sex": "Nữ",
+    "age": 21,
+    "marital_status": "Độc thân",
+    "education_level": "THPT",
+    "occupation": "Thất nghiệp / tìm việc",
+    "zone": "Đô Thị",
+    "region": "Thành Phố Hải Phòng",
+    "country": "Việt Nam"
+  },
+  "community": {
+    "Language": {
+      "level": 2,
+      "description": "Trung bình — câu rõ ràng, hạn chế thuật ngữ, ví dụ cụ thể"
+    },
+    "Topic": [
+      "Việc làm",
+      "Kỹ năng",
+      "Tài chính cá nhân"
+    ],
+    "Domain": [
+      "Công nghệ / Kỹ thuật số",
+      "Sáng tạo / Nghệ thuật"
+    ],
+    "Cultural": {
+      "orientation": "Truyền thống",
+      "region": "Thành Phố Hải Phòng",
+      "zone": "Đô Thị",
+      "context": "Truyền thống — Đô Thị — Thành Phố Hải Phòng"
+    },
+    "Prototype": "người trẻ nữ, thất nghiệp / tìm việc, trình độ thpt, sống tại đô thị Thành Phố Hải Phòng. Văn phong phù hợp: Trung bình — câu rõ ràng, hạn chế thuật ngữ, ví dụ cụ thể. Chủ đề quan tâm chính: Việc làm, Kỹ năng, Tài chính cá nhân. Định hướng văn hóa: Truyền thống."
+  }
+}

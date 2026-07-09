@@ -1,0 +1,48 @@
+{
+  "uuid": "555356f718474d25b65e91b176a597cc",
+  "raw_fields": {
+    "uuid": "555356f718474d25b65e91b176a597cc",
+    "professional_persona": "Anh Long là một nhà tổ chức sự kiện chuyên nghiệp, có kinh nghiệm trong việc lên kế hoạch và thực hiện các lễ hội lớn tại thành phố, kết hợp giữa văn hóa truyền thống và hiện đại.",
+    "sports_persona": "Anh Long yêu thích các môn thể thao như cầu lông và bóng đá, thường xuyên tham gia các trận đấu để giải tỏa căng thẳng và rèn luyện sức khỏe.",
+    "arts_persona": "Anh Long có sự yêu thích các hoạt động văn hóa và nghệ thuật, đặc biệt là tham gia các lễ hội và các sự kiện biểu diễn nghệ thuật.",
+    "travel_persona": "Anh Long thường xuyên tham gia các chuyến du lịch để khám phá các địa điểm mới và học hỏi thêm các kinh nghiệm tổ chức sự kiện từ các nơi khác.",
+    "culinary_persona": "Anh Long có sự yêu thích các món ăn truyền thống Việt Nam, đặc biệt là hủ tiếu và bánh mì, mà anh thường thưởng thức trong các lễ hội và sự kiện.",
+    "persona": "Ho Văn Long, 42 tuổi, là một nhà tổ chức sự kiện với niềm đam mê tạo ra các lễ hội lớn để kết nối cộng đồng tại Thành phố Hồ Chí Minh.",
+    "cultural_background": "Anh Long sinh trưởng trong một gia đình sống tại khu vực đô thị Thành phố Hồ Chí Minh. Anh được giáo dục về giá trị văn hóa truyền thống kết hợp với những thay đổi hiện đại của khu vực. Anh lớn lên trong không gian văn hóa đa sắc tộc, nơi sự kết nối giữa các cộng đồng khác nhau tạo nên một không khí sôi động, đa dạng.",
+    "skills_and_expertise": "Anh Long có kinh nghiệm quản lý và tổ chức sự kiện, đặc biệt là các lễ hội lớn. Anh cũng có kỹ năng về quản lý tài chính và marketing, thường xuyên tham gia vào các dự án nhằm thúc đẩy sự phát triển kinh tế của địa phương.",
+    "skills_and_expertise_list": "['Quản lý sự kiện', 'Quản lý tài chính', 'Marketing', 'Lập kế hoạch', 'Đánh giá rủi ro']",
+    "hobbies_and_interests": "Anh Long có niềm đam mê với các hoạt động thể thao như cầu lông và bóng đá, đồng thời anh cũng thích tham gia các lễ hội và các sự kiện văn hóa để khám phá và học hỏi.",
+    "hobbies_and_interests_list": "['Cầu lông', 'Bóng đá', 'Tham gia lễ hội', 'Lễ hội áo dài', 'Khám phá văn hóa']",
+    "career_goals_and_ambitions": "Anh Long hướng tới việc trở thành một nhà lãnh đạo trong lĩnh vực quản lý sự kiện và du lịch. Anh hy vọng xây dựng một thương hiệu có uy tín trong các lễ hội lớn của Việt Nam.",
+    "sex": "Nam",
+    "age": 42,
+    "marital_status": "Đã kết hôn",
+    "education_level": "Đại học",
+    "occupation": "Khác / không rõ",
+    "zone": "Đô Thị",
+    "region": "Thành Phố Hồ Chí Minh",
+    "country": "Việt Nam"
+  },
+  "community": {
+    "Language": {
+      "level": 3,
+      "description": "Trung bình-cao — có thể dùng thuật ngữ phổ thông, lập luận 2 tầng"
+    },
+    "Topic": [
+      "Đời sống",
+      "Thực tế",
+      "Cộng đồng"
+    ],
+    "Domain": [
+      "Quản lý / Tổ chức",
+      "Tài chính / Kế toán"
+    ],
+    "Cultural": {
+      "orientation": "Trung dung",
+      "region": "Thành Phố Hồ Chí Minh",
+      "zone": "Đô Thị",
+      "context": "Trung dung — Đô Thị — Thành Phố Hồ Chí Minh"
+    },
+    "Prototype": "người trung niên nam, khác / không rõ, trình độ đại học, sống tại đô thị Thành Phố Hồ Chí Minh. Văn phong phù hợp: Trung bình-cao — có thể dùng thuật ngữ phổ thông, lập luận 2 tầng. Chủ đề quan tâm chính: Đời sống, Thực tế, Cộng đồng. Định hướng văn hóa: Trung dung."
+  }
+}

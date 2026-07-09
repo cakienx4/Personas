@@ -1,0 +1,124 @@
+{
+  "uuid": "2d276acab58f4653a878ff061d3eb704",
+  "mode": "multi_text",
+  "ranking": [
+    {
+      "text_id": "text_1783329129",
+      "score": 3.0,
+      "content_classification": {
+        "type": "Bài chuyên sâu / Phân tích",
+        "genre": "Công nghệ / Kỹ thuật số"
+      }
+    },
+    {
+      "text_id": "text_1783327159",
+      "score": 0.0,
+      "content_classification": {
+        "type": "Tin tức",
+        "genre": "Chính trị / Pháp luật"
+      }
+    },
+    {
+      "text_id": "text_1783327926",
+      "score": 0.0,
+      "content_classification": {
+        "type": "Bài chuyên sâu / Phân tích",
+        "genre": "Y tế / Chăm sóc"
+      }
+    },
+    {
+      "text_id": "text_1783329446",
+      "score": 0.0,
+      "content_classification": {
+        "type": "Đánh giá / Review",
+        "genre": "Tài chính / Kế toán"
+      }
+    },
+    {
+      "text_id": "text_1783331545",
+      "score": 0.0,
+      "content_classification": {
+        "type": "Tin tức",
+        "genre": "Tài chính / Kế toán"
+      }
+    },
+    {
+      "text_id": "text_1783332108",
+      "score": 0.0,
+      "content_classification": {
+        "type": "Bài chuyên sâu / Phân tích",
+        "genre": "Tài chính / Kế toán"
+      }
+    }
+  ],
+  "primary_text_id": "text_1783329129",
+  "community_used": {
+    "Language": {
+      "level": 3,
+      "description": "Trung bình-cao — có thể dùng thuật ngữ phổ thông, lập luận 2 tầng"
+    },
+    "Topic": [
+      "Sáng tạo",
+      "Công nghệ",
+      "Kinh doanh cá nhân"
+    ],
+    "Domain": [
+      "Công nghệ / Kỹ thuật số",
+      "Quản lý / Tổ chức",
+      "Sáng tạo / Nghệ thuật"
+    ],
+    "Cultural": {
+      "orientation": "Truyền thống",
+      "region": "Thành Phố Cần Thơ",
+      "zone": "Đô Thị",
+      "context": "Truyền thống — Đô Thị — Thành Phố Cần Thơ"
+    },
+    "Prototype": "người trẻ nam, freelancer / làm tự do, trình độ trung cấp / cao đẳng, sống tại đô thị Thành Phố Cần Thơ. Văn phong phù hợp: Trung bình-cao — có thể dùng thuật ngữ phổ thông, lập luận 2 tầng. Chủ đề quan tâm chính: Sáng tạo, Công nghệ, Kinh doanh cá nhân. Định hướng văn hóa: Truyền thống."
+  },
+  "length_check": {
+    "specific_primary": {
+      "length_ok": true,
+      "words": 221,
+      "max_words": 498,
+      "attempts": 1
+    },
+    "general": {
+      "text_1783329129": {
+        "length_ok": true,
+        "words": 391,
+        "max_words": 498,
+        "attempts": 1
+      },
+      "text_1783327159": {
+        "length_ok": true,
+        "words": 408,
+        "max_words": 450,
+        "attempts": 1
+      },
+      "text_1783327926": {
+        "length_ok": true,
+        "words": 367,
+        "max_words": 506,
+        "attempts": 1
+      },
+      "text_1783329446": {
+        "length_ok": true,
+        "words": 346,
+        "max_words": 406,
+        "attempts": 1
+      },
+      "text_1783331545": {
+        "length_ok": true,
+        "words": 411,
+        "max_words": 536,
+        "attempts": 1
+      },
+      "text_1783332108": {
+        "length_ok": true,
+        "words": 298,
+        "max_words": 324,
+        "attempts": 1
+      }
+    }
+  }
+}

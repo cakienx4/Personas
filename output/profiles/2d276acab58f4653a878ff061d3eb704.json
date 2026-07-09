@@ -1,0 +1,49 @@
+{
+  "uuid": "2d276acab58f4653a878ff061d3eb704",
+  "raw_fields": {
+    "uuid": "2d276acab58f4653a878ff061d3eb704",
+    "professional_persona": "Anh Dũng là một freelance designer tài năng, sử dụng kiến thức từ khóa học Trung cấp để tạo ra các thiết kế độc đáo và ấn tượng. Anh có khả năng tổ chức và quản lý thời gian hiệu quả để đáp ứng các deadline.",
+    "sports_persona": "Anh Dũng là một người đam mê thể thao, đặc biệt là đá bóng và bơi lội. Anh thường tham gia các hoạt động thể thao trong cộng đồng Cần Thơ.",
+    "arts_persona": "Anh Dũng yêu thích nghệ thuật và thường tham gia các lễ hội và triển lãm. Anh cũng là người của các buổi biểu diễn âm nhạc và thích thưởng thức các thể loại nhạc khác nhau.",
+    "travel_persona": "Anh Dũng thích khám phá những địa điểm mới, đặc biệt là các lễ hội và chợ nổi ở Cần Thơ. Anh cũng có kế hoạch tham quan các điểm du lịch nổi tiếng của Việt Nam và thế giới trong tương lai.",
+    "culinary_persona": "Anh Dũng là người yêu thích ẩm thực, đặc biệt là các món ăn đặc sản của Miền Tây như lẩu mắm và bánh cống. Anh cũng đam mê thử các món ăn mới và khám phá các hương vị độc đáo.",
+    "persona": "Nguyễn Minh Dũng, 29 tuổi, một freelance designer trẻ trung và sáng tạo tại Cần Thơ. Anh yêu thích khám phá những xu hướng mới trong thế giới thiết kế, đồng thời tận hưởng những trải nghiệm văn hóa độc đáo của Miền Tây.",
+    "cultural_background": "Nguyễn Minh Dũng sinh ra và lớn lên trong một căn nhà phố nhỏ ở Cần Thơ, nơi hàng ngày ngập tràn không khí sôi động từ chợ nổi gần nhà. Anh quen thuộc với mùi hương của bánh cống nóng giòn và giọng ca của các nghệ sĩ trong lễ hội truyền thống. Là người trẻ có tinh thần cởi mở, anh sẵn sàng tham gia các buổi lễ hội và khám phá những món ăn mới trong văn hóa miền Tây.",
+    "skills_and_expertise": "Anh Dũng là một freelance designer với nhiều năm kinh nghiệm trong việc thiết kế đồ họa và xây dựng trang web. Anh sử dụng kiến thức từ khóa học Trung cấp để thực hiện các dự án sáng tạo, từ việc phác thảo bản giao diện đến tối ưu hóa trải nghiệm người dùng. Anh cũng có khả năng tổ chức và quản lý thời gian hiệu quả để đáp ứng các deadline.",
+    "skills_and_expertise_list": "['Thiết kế đồ họa', 'Xây dựng website', 'Tối ưu trải nghiệm người dùng', 'Quản lý dự án tự do', 'Phác thảo bản giao diện', 'Đàm phán hợp đồng với khách hàng']",
+    "hobbies_and_interests": "Anh Dũng thích tham gia các buổi tiệc và tụ tập bạn bè, đặc biệt là các hoạt động thể thao như đá bóng và bơi lội. Anh cũng đam mê khám phá các món ăn mới, nhất là những món đặc sản của Miền Tây như lẩu mắm.",
+    "hobbies_and_interests_list": "['Đá bóng', 'Bơi lội', 'Tham gia lễ hội', 'Khám phá món ăn mới', 'Tập thể dục']",
+    "career_goals_and_ambitions": "Mục tiêu ngắn hạn của anh là xây dựng danh tiếng vững chắc trong ngành thiết kế và trở thành một freelance designer được nhiều khách hàng tin tưởng. Dài hạn, anh muốn mở một studio thiết kế riêng tại Cần Thơ, tập trung vào việc tạo ra các sản phẩm sáng tạo và độc đáo cho khách hàng trong khu vực.",
+    "sex": "Nam",
+    "age": 29,
+    "marital_status": "Độc thân",
+    "education_level": "Trung cấp / Cao đẳng",
+    "occupation": "Freelancer / làm tự do",
+    "zone": "Đô Thị",
+    "region": "Thành Phố Cần Thơ",
+    "country": "Việt Nam"
+  },
+  "community": {
+    "Language": {
+      "level": 3,
+      "description": "Trung bình-cao — có thể dùng thuật ngữ phổ thông, lập luận 2 tầng"
+    },
+    "Topic": [
+      "Sáng tạo",
+      "Công nghệ",
+      "Kinh doanh cá nhân"
+    ],
+    "Domain": [
+      "Công nghệ / Kỹ thuật số",
+      "Quản lý / Tổ chức",
+      "Sáng tạo / Nghệ thuật"
+    ],
+    "Cultural": {
+      "orientation": "Truyền thống",
+      "region": "Thành Phố Cần Thơ",
+      "zone": "Đô Thị",
+      "context": "Truyền thống — Đô Thị — Thành Phố Cần Thơ"
+    },
+    "Prototype": "người trẻ nam, freelancer / làm tự do, trình độ trung cấp / cao đẳng, sống tại đô thị Thành Phố Cần Thơ. Văn phong phù hợp: Trung bình-cao — có thể dùng thuật ngữ phổ thông, lập luận 2 tầng. Chủ đề quan tâm chính: Sáng tạo, Công nghệ, Kinh doanh cá nhân. Định hướng văn hóa: Truyền thống."
+  }
+}

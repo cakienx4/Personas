@@ -1,0 +1,1 @@
+Bà Nga cần đi khám sức khỏe tổng quát mỗi năm một lần. Phụ nữ cần chú ý sức khỏe xương khớp và tầm soát ung thư vú. Nam giới cần tầm soát tim mạch và tuyến tiền liệt. Hãy ăn uống cân bằng để giữ sức khỏe.

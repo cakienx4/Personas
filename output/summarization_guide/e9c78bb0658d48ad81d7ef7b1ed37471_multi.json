@@ -1,0 +1,53 @@
+{
+  "uuid": "e9c78bb0658d48ad81d7ef7b1ed37471",
+  "mode": "multi_text",
+  "ranking": [
+    {
+      "text_id": "text_1783330063",
+      "score": 1.0,
+      "content_classification": {
+        "type": "Thông báo / Thông cáo",
+        "genre": "Tài chính / Kế toán"
+      }
+    }
+  ],
+  "primary_text_id": "text_1783330063",
+  "community_used": {
+    "Language": {
+      "level": 2,
+      "description": "Trung bình — câu rõ ràng, hạn chế thuật ngữ, ví dụ cụ thể"
+    },
+    "Topic": [
+      "Việc làm",
+      "Kỹ năng",
+      "Tài chính cá nhân"
+    ],
+    "Domain": [
+      "Công nghệ / Kỹ thuật số",
+      "Sáng tạo / Nghệ thuật"
+    ],
+    "Cultural": {
+      "orientation": "Truyền thống",
+      "region": "Thành Phố Hải Phòng",
+      "zone": "Đô Thị",
+      "context": "Truyền thống — Đô Thị — Thành Phố Hải Phòng"
+    },
+    "Prototype": "người trẻ nữ, thất nghiệp / tìm việc, trình độ thpt, sống tại đô thị Thành Phố Hải Phòng. Văn phong phù hợp: Trung bình — câu rõ ràng, hạn chế thuật ngữ, ví dụ cụ thể. Chủ đề quan tâm chính: Việc làm, Kỹ năng, Tài chính cá nhân. Định hướng văn hóa: Truyền thống."
+  },
+  "length_check": {
+    "specific_primary": {
+      "length_ok": true,
+      "words": 200,
+      "max_words": 742,
+      "attempts": 1
+    },
+    "general": {
+      "text_1783330063": {
+        "length_ok": true,
+        "words": 356,
+        "max_words": 742,
+        "attempts": 1
+      }
+    }
+  }
+}

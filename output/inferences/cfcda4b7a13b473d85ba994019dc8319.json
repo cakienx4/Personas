@@ -1,0 +1,20 @@
+{
+  "xac_nhan": {
+    "age": 39,
+    "sex": "Nam",
+    "life_stage": "người trung niên",
+    "education": "Không học vấn",
+    "occupation": "Buôn bán / kinh doanh",
+    "location": "Nông Thôn, Thủ Đô Hà Nội, Việt Nam",
+    "marital_status": "Độc thân",
+    "family_context": "chưa lập gia đình",
+    "skills_summary": "Minh có năng khiếu đàm phán và kinh nghiệm trong việc mua bán lúa gạo, hàng hóa.  Anh thạo việc cân đong đo đấu, tính toán giá cả và tạo dựng mối quan hệ với người bán và người mua.",
+    "professional": "Minh là một người buôn bán gạo và hàng hóa truyền thống.",
+    "statement": "người trung niên nam, 39 tuổi, chưa lập gia đình, trình độ không học vấn, nghề nghiệp: buôn bán / kinh doanh, sống tại nông thôn Thủ Đô Hà Nội, Việt Nam. Chuyên môn: Minh có năng khiếu đàm phán và kinh nghiệm trong việc mua bán lúa gạo, hàng hóa.  Anh thạo việc cân đong đo đấu, tính toán giá cả và tạo dựng mối quan hệ với người bán và người mua. Bối cảnh nghề nghiệp: Minh là một người buôn bán gạo và hàng hóa truyền thống."
+  },
+  "gia_tuong": {
+    "Bổn phận": "Có bổn phận tự chủ về tài chính và phát triển bản thân và duy trì và phát triển hoạt động kinh doanh, tạo thu nhập ổn định.",
+    "Mong muốn": "Minh mong muốn mở rộng kinh doanh, có thể chuyển từ buôn lúa gạo sang kinh doanh thực phẩm sạch. Anh cũng hy vọng có thể xây dựng một cơ ngơi vững chắc cho gia đình mình.",
+    "Niềm tin": "Tin rằng nỗ lực và kinh nghiệm hiện tại đủ để đạt được mục tiêu đã đặt ra, đặc biệt khi có sự hỗ trợ từ gia đình và cộng đồng xung quanh."
+  }
+}

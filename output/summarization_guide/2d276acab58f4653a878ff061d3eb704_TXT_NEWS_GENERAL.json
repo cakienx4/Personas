@@ -1,0 +1,45 @@
+{
+  "uuid": "2d276acab58f4653a878ff061d3eb704",
+  "text_id": "TXT_NEWS_GENERAL",
+  "content_classification": {
+    "type": "Bài chuyên sâu / Phân tích",
+    "genre": "Môi trường"
+  },
+  "community_used": {
+    "Language": {
+      "level": 3,
+      "description": "Trung bình-cao — có thể dùng thuật ngữ phổ thông, lập luận 2 tầng"
+    },
+    "Topic": [
+      "Sáng tạo",
+      "Công nghệ",
+      "Kinh doanh cá nhân"
+    ],
+    "Domain": [
+      "Công nghệ / Kỹ thuật số",
+      "Quản lý / Tổ chức",
+      "Sáng tạo / Nghệ thuật"
+    ],
+    "Cultural": {
+      "orientation": "Truyền thống",
+      "region": "Thành Phố Cần Thơ",
+      "zone": "Đô Thị",
+      "context": "Truyền thống — Đô Thị — Thành Phố Cần Thơ"
+    },
+    "Prototype": "người trẻ nam, freelancer / làm tự do, trình độ trung cấp / cao đẳng, sống tại đô thị Thành Phố Cần Thơ. Văn phong phù hợp: Trung bình-cao — có thể dùng thuật ngữ phổ thông, lập luận 2 tầng. Chủ đề quan tâm chính: Sáng tạo, Công nghệ, Kinh doanh cá nhân. Định hướng văn hóa: Truyền thống."
+  },
+  "length_check": {
+    "general": {
+      "length_ok": true,
+      "words": 351,
+      "max_words": 403,
+      "attempts": 1
+    },
+    "specific": {
+      "length_ok": true,
+      "words": 173,
+      "max_words": 403,
+      "attempts": 1
+    }
+  }
+}

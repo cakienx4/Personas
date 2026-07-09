@@ -1,0 +1,53 @@
+{
+  "uuid": "555356f718474d25b65e91b176a597cc",
+  "mode": "multi_text",
+  "ranking": [
+    {
+      "text_id": "text_1783330063",
+      "score": 2.0,
+      "content_classification": {
+        "type": "Thông báo / Thông cáo",
+        "genre": "Tài chính / Kế toán"
+      }
+    }
+  ],
+  "primary_text_id": "text_1783330063",
+  "community_used": {
+    "Language": {
+      "level": 3,
+      "description": "Trung bình-cao — có thể dùng thuật ngữ phổ thông, lập luận 2 tầng"
+    },
+    "Topic": [
+      "Đời sống",
+      "Thực tế",
+      "Cộng đồng"
+    ],
+    "Domain": [
+      "Quản lý / Tổ chức",
+      "Tài chính / Kế toán"
+    ],
+    "Cultural": {
+      "orientation": "Trung dung",
+      "region": "Thành Phố Hồ Chí Minh",
+      "zone": "Đô Thị",
+      "context": "Trung dung — Đô Thị — Thành Phố Hồ Chí Minh"
+    },
+    "Prototype": "người trung niên nam, khác / không rõ, trình độ đại học, sống tại đô thị Thành Phố Hồ Chí Minh. Văn phong phù hợp: Trung bình-cao — có thể dùng thuật ngữ phổ thông, lập luận 2 tầng. Chủ đề quan tâm chính: Đời sống, Thực tế, Cộng đồng. Định hướng văn hóa: Trung dung."
+  },
+  "length_check": {
+    "specific_primary": {
+      "length_ok": true,
+      "words": 265,
+      "max_words": 742,
+      "attempts": 1
+    },
+    "general": {
+      "text_1783330063": {
+        "length_ok": true,
+        "words": 356,
+        "max_words": 742,
+        "attempts": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+Nam giới 29 tuổi cần khám sức khỏe tổng quát hàng năm và duy trì chế độ ăn cân bằng. Đối với nam giới trung niên, cần tầm soát tim mạch và tuyến tiền liệt định kỳ. Về sức khỏe nữ giới: tầm soát ung thư vú và xương khớp.

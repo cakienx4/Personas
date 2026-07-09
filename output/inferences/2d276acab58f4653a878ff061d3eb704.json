@@ -1,0 +1,20 @@
+{
+  "xac_nhan": {
+    "age": 29,
+    "sex": "Nam",
+    "life_stage": "người trẻ",
+    "education": "Trung cấp / Cao đẳng",
+    "occupation": "Freelancer / làm tự do",
+    "location": "Đô Thị, Thành Phố Cần Thơ, Việt Nam",
+    "marital_status": "Độc thân",
+    "family_context": "chưa lập gia đình",
+    "skills_summary": "Anh Dũng là một freelance designer với nhiều năm kinh nghiệm trong việc thiết kế đồ họa và xây dựng trang web.  Anh sử dụng kiến thức từ khóa học Trung cấp để thực hiện các dự án sáng tạo, từ việc phác thảo bản giao diện đến tối ưu hóa trải nghiệm người dùng.",
+    "professional": "Anh Dũng là một freelance designer tài năng, sử dụng kiến thức từ khóa học Trung cấp để tạo ra các thiết kế độc đáo và ấn tượng.",
+    "statement": "người trẻ nam, 29 tuổi, chưa lập gia đình, trình độ trung cấp / cao đẳng, nghề nghiệp: freelancer / làm tự do, sống tại đô thị Thành Phố Cần Thơ, Việt Nam. Chuyên môn: Anh Dũng là một freelance designer với nhiều năm kinh nghiệm trong việc thiết kế đồ họa và xây dựng trang web.  Anh sử dụng kiến thức từ khóa học Trung cấp để thực hiện các dự án sáng tạo, từ việc phác thảo bản giao diện đến tối ưu hóa trải nghiệm người dùng. Bối cảnh nghề nghiệp: Anh Dũng là một freelance designer tài năng, sử dụng kiến thức từ khóa học Trung cấp để tạo ra các thiết kế độc đáo và ấn tượng."
+  },
+  "gia_tuong": {
+    "Bổn phận": "Có bổn phận tự chủ về tài chính và phát triển bản thân và xây dựng uy tín nghề nghiệp và duy trì nguồn khách hàng ổn định.",
+    "Mong muốn": "Mục tiêu ngắn hạn của anh là xây dựng danh tiếng vững chắc trong ngành thiết kế và trở thành một freelance designer được nhiều khách hàng tin tưởng. Dài hạn, anh muốn mở một studio thiết kế riêng tại Cần Thơ, tập trung vào việc tạo ra các sản phẩm sáng tạo và độc đáo cho khách hàng trong khu vực.",
+    "Niềm tin": "Tin rằng bản thân còn nhiều cơ hội và khả năng để phát triển và khẳng định bản thân, đặc biệt khi có sự hỗ trợ từ gia đình và cộng đồng xung quanh."
+  }
+}

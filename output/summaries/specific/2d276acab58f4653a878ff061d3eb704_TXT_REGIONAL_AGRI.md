@@ -1,0 +1,1 @@
+Nông nghiệp Việt Nam đang chuyển dịch sang công nghệ cao. Tại Đồng bằng sông Cửu Long, nông dân áp dụng canh tác thông minh để thích ứng xâm nhập mặn. Trong khi đó, mô hình nông nghiệp kết hợp du lịch sinh thái đang phát triển tại miền Trung và Tây Nguyên, thu hút du khách trải nghiệm thu hoạch nông sản trực tiếp tại vườn.

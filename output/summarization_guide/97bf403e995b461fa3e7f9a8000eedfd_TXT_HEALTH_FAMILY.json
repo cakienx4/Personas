@@ -1,0 +1,45 @@
+{
+  "uuid": "97bf403e995b461fa3e7f9a8000eedfd",
+  "text_id": "TXT_HEALTH_FAMILY",
+  "content_classification": {
+    "type": "Tin tức",
+    "genre": "Y tế / Chăm sóc"
+  },
+  "community_used": {
+    "Language": {
+      "level": 1,
+      "description": "Đơn giản — câu ngắn, từ ngữ đời thường, không dùng thuật ngữ chuyên môn"
+    },
+    "Topic": [
+      "Sức khỏe",
+      "Đời sống",
+      "Gia đình",
+      "Cộng đồng"
+    ],
+    "Domain": [
+      "Nấu ăn / Ẩm thực",
+      "Quản lý / Tổ chức"
+    ],
+    "Cultural": {
+      "orientation": "Truyền thống",
+      "region": "Thành Phố Đà Nẵng",
+      "zone": "Nông Thôn",
+      "context": "Truyền thống — Nông Thôn — Thành Phố Đà Nẵng"
+    },
+    "Prototype": "người cao tuổi nữ, nghỉ hưu, trình độ không học vấn, sống tại nông thôn Thành Phố Đà Nẵng. Văn phong phù hợp: Đơn giản — câu ngắn, từ ngữ đời thường, không dùng thuật ngữ chuyên môn. Chủ đề quan tâm chính: Sức khỏe, Đời sống, Gia đình. Định hướng văn hóa: Truyền thống."
+  },
+  "length_check": {
+    "general": {
+      "length_ok": false,
+      "words": 61,
+      "max_words": 53,
+      "attempts": 3
+    },
+    "specific": {
+      "length_ok": true,
+      "words": 48,
+      "max_words": 53,
+      "attempts": 2
+    }
+  }
+}

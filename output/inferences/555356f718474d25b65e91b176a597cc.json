@@ -1,0 +1,20 @@
+{
+  "xac_nhan": {
+    "age": 42,
+    "sex": "Nam",
+    "life_stage": "người trung niên",
+    "education": "Đại học",
+    "occupation": "Khác / không rõ",
+    "location": "Đô Thị, Thành Phố Hồ Chí Minh, Việt Nam",
+    "marital_status": "Đã kết hôn",
+    "family_context": "đã lập gia đình",
+    "skills_summary": "Anh Long có kinh nghiệm quản lý và tổ chức sự kiện, đặc biệt là các lễ hội lớn.  Anh cũng có kỹ năng về quản lý tài chính và marketing, thường xuyên tham gia vào các dự án nhằm thúc đẩy sự phát triển kinh tế của địa phương.",
+    "professional": "Anh Long là một nhà tổ chức sự kiện chuyên nghiệp, có kinh nghiệm trong việc lên kế hoạch và thực hiện các lễ hội lớn tại thành phố, kết hợp giữa văn hóa truyền thống và hiện đại.",
+    "statement": "người trung niên nam, 42 tuổi, đã lập gia đình, trình độ đại học, nghề nghiệp: khác / không rõ, sống tại đô thị Thành Phố Hồ Chí Minh, Việt Nam. Chuyên môn: Anh Long có kinh nghiệm quản lý và tổ chức sự kiện, đặc biệt là các lễ hội lớn.  Anh cũng có kỹ năng về quản lý tài chính và marketing, thường xuyên tham gia vào các dự án nhằm thúc đẩy sự phát triển kinh tế của địa phương. Bối cảnh nghề nghiệp: Anh Long là một nhà tổ chức sự kiện chuyên nghiệp, có kinh nghiệm trong việc lên kế hoạch và thực hiện các lễ hội lớn tại thành phố, kết hợp giữa văn hóa truyền thống và hiện đại."
+  },
+  "gia_tuong": {
+    "Bổn phận": "Có bổn phận xây dựng và duy trì cuộc sống gia đình và hoàn thành tốt công việc và trách nhiệm hàng ngày.",
+    "Mong muốn": "Anh Long hướng tới việc trở thành một nhà lãnh đạo trong lĩnh vực quản lý sự kiện và du lịch. Anh hy vọng xây dựng một thương hiệu có uy tín trong các lễ hội lớn của Việt Nam.",
+    "Niềm tin": "Tin rằng nỗ lực và kinh nghiệm hiện tại đủ để đạt được mục tiêu đã đặt ra, đặc biệt khi có sự hỗ trợ từ gia đình và cộng đồng xung quanh."
+  }
+}

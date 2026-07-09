@@ -1,0 +1,123 @@
+{
+  "uuid": "cfcda4b7a13b473d85ba994019dc8319",
+  "mode": "multi_text",
+  "ranking": [
+    {
+      "text_id": "text_1783329446",
+      "score": 1.0,
+      "content_classification": {
+        "type": "Đánh giá / Review",
+        "genre": "Tài chính / Kế toán"
+      }
+    },
+    {
+      "text_id": "text_1783331545",
+      "score": 1.0,
+      "content_classification": {
+        "type": "Tin tức",
+        "genre": "Tài chính / Kế toán"
+      }
+    },
+    {
+      "text_id": "text_1783332108",
+      "score": 1.0,
+      "content_classification": {
+        "type": "Bài chuyên sâu / Phân tích",
+        "genre": "Tài chính / Kế toán"
+      }
+    },
+    {
+      "text_id": "text_1783327159",
+      "score": 0.0,
+      "content_classification": {
+        "type": "Tin tức",
+        "genre": "Chính trị / Pháp luật"
+      }
+    },
+    {
+      "text_id": "text_1783327926",
+      "score": 0.0,
+      "content_classification": {
+        "type": "Bài chuyên sâu / Phân tích",
+        "genre": "Y tế / Chăm sóc"
+      }
+    },
+    {
+      "text_id": "text_1783329129",
+      "score": 0.0,
+      "content_classification": {
+        "type": "Bài chuyên sâu / Phân tích",
+        "genre": "Công nghệ / Kỹ thuật số"
+      }
+    }
+  ],
+  "primary_text_id": "text_1783329446",
+  "community_used": {
+    "Language": {
+      "level": 1,
+      "description": "Đơn giản — câu ngắn, từ ngữ đời thường, không dùng thuật ngữ chuyên môn"
+    },
+    "Topic": [
+      "Thị trường",
+      "Giá cả",
+      "Kinh doanh",
+      "Tài chính"
+    ],
+    "Domain": [
+      "Giao tiếp / Truyền thông"
+    ],
+    "Cultural": {
+      "orientation": "Truyền thống",
+      "region": "Thủ Đô Hà Nội",
+      "zone": "Nông Thôn",
+      "context": "Truyền thống — Nông Thôn — Thủ Đô Hà Nội"
+    },
+    "Prototype": "người trung niên nam, buôn bán / kinh doanh, trình độ không học vấn, sống tại nông thôn Thủ Đô Hà Nội. Văn phong phù hợp: Đơn giản — câu ngắn, từ ngữ đời thường, không dùng thuật ngữ chuyên môn. Chủ đề quan tâm chính: Thị trường, Giá cả, Kinh doanh. Định hướng văn hóa: Truyền thống."
+  },
+  "length_check": {
+    "specific_primary": {
+      "length_ok": true,
+      "words": 158,
+      "max_words": 406,
+      "attempts": 1
+    },
+    "general": {
+      "text_1783329446": {
+        "length_ok": true,
+        "words": 346,
+        "max_words": 406,
+        "attempts": 1
+      },
+      "text_1783331545": {
+        "length_ok": true,
+        "words": 411,
+        "max_words": 536,
+        "attempts": 1
+      },
+      "text_1783332108": {
+        "length_ok": true,
+        "words": 298,
+        "max_words": 324,
+        "attempts": 1
+      },
+      "text_1783327159": {
+        "length_ok": true,
+        "words": 408,
+        "max_words": 450,
+        "attempts": 1
+      },
+      "text_1783327926": {
+        "length_ok": true,
+        "words": 367,
+        "max_words": 506,
+        "attempts": 1
+      },
+      "text_1783329129": {
+        "length_ok": true,
+        "words": 391,
+        "max_words": 498,
+        "attempts": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "xac_nhan": {
+    "age": 80,
+    "sex": "Nữ",
+    "life_stage": "người cao tuổi",
+    "education": "THCS",
+    "occupation": "Tài xế / giao hàng",
+    "location": "Nông Thôn, Thành Phố Hải Phòng, Việt Nam",
+    "marital_status": "Góa",
+    "family_context": "góa bụa",
+    "skills_summary": "Bà học hết trung học, có thể soạn và đọc bản đồ, biết sử dụng GPS, cũng như thao tác máy móc phức tạp.  Những kinh nghiệm này giúp bà thành thạo trong việc điều khiển xe và đảm bảo hàng hóa được giao đúng hạn.",
+    "professional": "Phạm Thanh Nga là một tài xế chuyên nghiệp với nhiều năm kinh nghiệm, có khả năng điều khiển xe và đảm bảo hàng hóa được giao đúng thời hạn.",
+    "statement": "người cao tuổi nữ, 80 tuổi, góa bụa, trình độ thcs, nghề nghiệp: tài xế / giao hàng, sống tại nông thôn Thành Phố Hải Phòng, Việt Nam. Chuyên môn: Bà học hết trung học, có thể soạn và đọc bản đồ, biết sử dụng GPS, cũng như thao tác máy móc phức tạp.  Những kinh nghiệm này giúp bà thành thạo trong việc điều khiển xe và đảm bảo hàng hóa được giao đúng hạn. Bối cảnh nghề nghiệp: Phạm Thanh Nga là một tài xế chuyên nghiệp với nhiều năm kinh nghiệm, có khả năng điều khiển xe và đảm bảo hàng hóa được giao đúng thời hạn."
+  },
+  "gia_tuong": {
+    "Bổn phận": "Có bổn phận tự lo cho bản thân và duy trì các mối quan hệ gia đình và đảm bảo an toàn giao thông và hoàn thành nhiệm vụ vận chuyển.",
+    "Mong muốn": "Bà muốn tăng thu nhập từ công việc tài xế, đồng thời đảm bảo giao hàng đúng thời gian nhất có thể. Bà cũng hy vọng học thêm về kỹ thuật để có thể tự bảo dưỡng xe, giảm thiểu chi phí sửa chữa.",
+    "Niềm tin": "Tin rằng mình vẫn có thể sống vui vẻ, có ích và hòa nhập với cộng đồng dù đã lớn tuổi."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "uuid": "e5f691536a5f434692bc509d6aef1905",
+  "raw_fields": {
+    "uuid": "e5f691536a5f434692bc509d6aef1905",
+    "professional_persona": "Phạm Thanh Nga là một tài xế chuyên nghiệp với nhiều năm kinh nghiệm, có khả năng điều khiển xe và đảm bảo hàng hóa được giao đúng thời hạn. Bà luôn tận tụy với công việc, đảm bảo an toàn và đúng hẹn trong mọi chuyến đi.",
+    "sports_persona": "Phạm Thanh Nga có niềm đam mê với thể thao, đặc biệt là các môn bóng đá và bóng chuyền. Bà thường xuyên tham gia các trận đấu trong khu phố và luôn khuyến khích bà con tham gia các hoạt động thể dục thể thao.",
+    "arts_persona": "Phạm Thanh Nga là một người yêu thích nghệ thuật, đặc biệt là các lễ hội hoa phượng đỏ và các buổi biểu diễn ca trù. Bà thường tham gia các sự kiện văn hóa trong cộng đồng và có niềm đam mê với các nghệ sĩ như Hồng Nga, một nghệ sĩ ca trù nổi tiếng.",
+    "travel_persona": "Phạm Thanh Nga có thói quen du lịch ngắn ngày trong tỉnh Hải Phòng, đặc biệt là đến Đồ Sơn và Cát Bà. Bà thích khám phá các khu du lịch mới và luôn tìm kiếm các trải nghiệm thú vị.",
+    "culinary_persona": "Phạm Thanh Nga rất thích nấu ăn, đặc biệt là các món ăn Hải Phòng như bánh đa cua và nem cua bể. Bà thường xuyên tổ chức các bữa tiệc cho gia đình và bà con, và luôn đảm bảo các món ăn được chuẩn bị ngon miệng và hấp dẫn.",
+    "persona": "Phạm Thanh Nga, một phụ nữ trung niên với cuộc sống đầy thách thức nhưng luôn giữ vững tinh thần lạc quan và nhiệt tình trong công việc tài xế.",
+    "cultural_background": "Phạm Thanh Nga sinh ra và lớn lên trong một khu nhà tập thể cũ ở Hải Phòng. Bà quen với không gian chật chội, tiếng ồn từ hàng xóm nhưng cũng có những mối quan hệ gần gũi như anh em, họ hàng. Những ngày lễ hội, bà cùng bà con tham gia lễ hội hoa phượng đỏ, xem hát chèo và thưởng thức nem cua bể, bánh đa cua.",
+    "skills_and_expertise": "Bà học hết trung học, có thể soạn và đọc bản đồ, biết sử dụng GPS, cũng như thao tác máy móc phức tạp. Những kinh nghiệm này giúp bà thành thạo trong việc điều khiển xe và đảm bảo hàng hóa được giao đúng hạn.",
+    "skills_and_expertise_list": "['Điều khiển xe tải, xe khách', 'Thao tác GPS và bản đồ', 'Thuyết trình và giới thiệu sản phẩm', 'Đảm bảo an toàn khi giao hàng', 'Quản lý thời gian giao nhận', 'Tháo lắp và bảo dưỡng xe']",
+    "hobbies_and_interests": "Bà quan tâm đến việc làm vườn và tập thể dục vào buổi sáng. Bà cũng thích nghe xẩm, ca trù và tham gia các buổi tiệc liên hoan với bà con hàng xóm.",
+    "hobbies_and_interests_list": "['Tập thể dục buổi sáng', 'Làm vườn', 'Nghe xẩm, ca trù', 'Tham gia lễ hội hoa phượng đỏ', 'Chơi cờ tướng']",
+    "career_goals_and_ambitions": "Bà muốn tăng thu nhập từ công việc tài xế, đồng thời đảm bảo giao hàng đúng thời gian nhất có thể. Bà cũng hy vọng học thêm về kỹ thuật để có thể tự bảo dưỡng xe, giảm thiểu chi phí sửa chữa.",
+    "sex": "Nữ",
+    "age": 80,
+    "marital_status": "Góa",
+    "education_level": "THCS",
+    "occupation": "Tài xế / giao hàng",
+    "zone": "Nông Thôn",
+    "region": "Thành Phố Hải Phòng",
+    "country": "Việt Nam"
+  },
+  "community": {
+    "Language": {
+      "level": 1,
+      "description": "Đơn giản — câu ngắn, từ ngữ đời thường, không dùng thuật ngữ chuyên môn"
+    },
+    "Topic": [
+      "Sức khỏe",
+      "Giao thông",
+      "Đời sống",
+      "Thu nhập"
+    ],
+    "Domain": [
+      "Vận tải / Giao nhận"
+    ],
+    "Cultural": {
+      "orientation": "Truyền thống",
+      "region": "Thành Phố Hải Phòng",
+      "zone": "Nông Thôn",
+      "context": "Truyền thống — Nông Thôn — Thành Phố Hải Phòng"
+    },
+    "Prototype": "người cao tuổi nữ, tài xế / giao hàng, trình độ thcs, sống tại nông thôn Thành Phố Hải Phòng. Văn phong phù hợp: Đơn giản — câu ngắn, từ ngữ đời thường, không dùng thuật ngữ chuyên môn. Chủ đề quan tâm chính: Sức khỏe, Giao thông, Đời sống. Định hướng văn hóa: Truyền thống."
+  }
+}

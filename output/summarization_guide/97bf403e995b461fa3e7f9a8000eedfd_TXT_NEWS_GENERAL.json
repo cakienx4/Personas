@@ -1,0 +1,45 @@
+{
+  "uuid": "97bf403e995b461fa3e7f9a8000eedfd",
+  "text_id": "TXT_NEWS_GENERAL",
+  "content_classification": {
+    "type": "Bài chuyên sâu / Phân tích",
+    "genre": "Môi trường"
+  },
+  "community_used": {
+    "Language": {
+      "level": 1,
+      "description": "Đơn giản — câu ngắn, từ ngữ đời thường, không dùng thuật ngữ chuyên môn"
+    },
+    "Topic": [
+      "Sức khỏe",
+      "Đời sống",
+      "Gia đình",
+      "Cộng đồng"
+    ],
+    "Domain": [
+      "Nấu ăn / Ẩm thực",
+      "Quản lý / Tổ chức"
+    ],
+    "Cultural": {
+      "orientation": "Truyền thống",
+      "region": "Thành Phố Đà Nẵng",
+      "zone": "Nông Thôn",
+      "context": "Truyền thống — Nông Thôn — Thành Phố Đà Nẵng"
+    },
+    "Prototype": "người cao tuổi nữ, nghỉ hưu, trình độ không học vấn, sống tại nông thôn Thành Phố Đà Nẵng. Văn phong phù hợp: Đơn giản — câu ngắn, từ ngữ đời thường, không dùng thuật ngữ chuyên môn. Chủ đề quan tâm chính: Sức khỏe, Đời sống, Gia đình. Định hướng văn hóa: Truyền thống."
+  },
+  "length_check": {
+    "general": {
+      "length_ok": true,
+      "words": 351,
+      "max_words": 403,
+      "attempts": 1
+    },
+    "specific": {
+      "length_ok": true,
+      "words": 118,
+      "max_words": 403,
+      "attempts": 1
+    }
+  }
+}

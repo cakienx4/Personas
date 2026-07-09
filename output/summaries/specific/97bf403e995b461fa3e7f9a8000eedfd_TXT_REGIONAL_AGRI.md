@@ -1,0 +1,1 @@
+Ở miền Trung và Tây Nguyên, người ta đang làm mô hình nông nghiệp kết hợp du lịch. Khách đến vườn được tự tay thu hoạch nông sản. Việc này giúp thu hút thêm nhiều người tới tham quan.

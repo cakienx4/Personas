@@ -1,0 +1,1 @@
+Đàn ông trung niên cần đi khám tim mạch và tuyến tiền liệt định kỳ. Cả nam và nữ nên ăn uống cân bằng và khám sức khỏe tổng quát mỗi năm một lần. Phụ nữ cần chú ý xương khớp và ung thư vú.

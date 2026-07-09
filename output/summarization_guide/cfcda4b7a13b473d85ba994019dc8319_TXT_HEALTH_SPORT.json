@@ -1,0 +1,44 @@
+{
+  "uuid": "cfcda4b7a13b473d85ba994019dc8319",
+  "text_id": "TXT_HEALTH_SPORT",
+  "content_classification": {
+    "type": "Tin tức",
+    "genre": "Y tế / Chăm sóc"
+  },
+  "community_used": {
+    "Language": {
+      "level": 1,
+      "description": "Đơn giản — câu ngắn, từ ngữ đời thường, không dùng thuật ngữ chuyên môn"
+    },
+    "Topic": [
+      "Thị trường",
+      "Giá cả",
+      "Kinh doanh",
+      "Tài chính"
+    ],
+    "Domain": [
+      "Giao tiếp / Truyền thông"
+    ],
+    "Cultural": {
+      "orientation": "Truyền thống",
+      "region": "Thủ Đô Hà Nội",
+      "zone": "Nông Thôn",
+      "context": "Truyền thống — Nông Thôn — Thủ Đô Hà Nội"
+    },
+    "Prototype": "người trung niên nam, buôn bán / kinh doanh, trình độ không học vấn, sống tại nông thôn Thủ Đô Hà Nội. Văn phong phù hợp: Đơn giản — câu ngắn, từ ngữ đời thường, không dùng thuật ngữ chuyên môn. Chủ đề quan tâm chính: Thị trường, Giá cả, Kinh doanh. Định hướng văn hóa: Truyền thống."
+  },
+  "length_check": {
+    "general": {
+      "length_ok": true,
+      "words": 285,
+      "max_words": 426,
+      "attempts": 1
+    },
+    "specific": {
+      "length_ok": true,
+      "words": 177,
+      "max_words": 426,
+      "attempts": 1
+    }
+  }
+}

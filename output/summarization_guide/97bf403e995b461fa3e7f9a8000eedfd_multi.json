@@ -1,0 +1,124 @@
+{
+  "uuid": "97bf403e995b461fa3e7f9a8000eedfd",
+  "mode": "multi_text",
+  "ranking": [
+    {
+      "text_id": "text_1783327926",
+      "score": 6.0,
+      "content_classification": {
+        "type": "Bài chuyên sâu / Phân tích",
+        "genre": "Y tế / Chăm sóc"
+      }
+    },
+    {
+      "text_id": "text_1783327159",
+      "score": 0.0,
+      "content_classification": {
+        "type": "Tin tức",
+        "genre": "Chính trị / Pháp luật"
+      }
+    },
+    {
+      "text_id": "text_1783329129",
+      "score": 0.0,
+      "content_classification": {
+        "type": "Bài chuyên sâu / Phân tích",
+        "genre": "Công nghệ / Kỹ thuật số"
+      }
+    },
+    {
+      "text_id": "text_1783329446",
+      "score": 0.0,
+      "content_classification": {
+        "type": "Đánh giá / Review",
+        "genre": "Tài chính / Kế toán"
+      }
+    },
+    {
+      "text_id": "text_1783331545",
+      "score": 0.0,
+      "content_classification": {
+        "type": "Tin tức",
+        "genre": "Công nghệ / Kỹ thuật số"
+      }
+    },
+    {
+      "text_id": "text_1783332108",
+      "score": 0.0,
+      "content_classification": {
+        "type": "Bài chuyên sâu / Phân tích",
+        "genre": "Tài chính / Kế toán"
+      }
+    }
+  ],
+  "primary_text_id": "text_1783327926",
+  "community_used": {
+    "Language": {
+      "level": 1,
+      "description": "Đơn giản — câu ngắn, từ ngữ đời thường, không dùng thuật ngữ chuyên môn"
+    },
+    "Topic": [
+      "Sức khỏe",
+      "Đời sống",
+      "Gia đình",
+      "Cộng đồng"
+    ],
+    "Domain": [
+      "Nấu ăn / Ẩm thực",
+      "Quản lý / Tổ chức"
+    ],
+    "Cultural": {
+      "orientation": "Truyền thống",
+      "region": "Thành Phố Đà Nẵng",
+      "zone": "Nông Thôn",
+      "context": "Truyền thống — Nông Thôn — Thành Phố Đà Nẵng"
+    },
+    "Prototype": "người cao tuổi nữ, nghỉ hưu, trình độ không học vấn, sống tại nông thôn Thành Phố Đà Nẵng. Văn phong phù hợp: Đơn giản — câu ngắn, từ ngữ đời thường, không dùng thuật ngữ chuyên môn. Chủ đề quan tâm chính: Sức khỏe, Đời sống, Gia đình. Định hướng văn hóa: Truyền thống."
+  },
+  "length_check": {
+    "specific_primary": {
+      "length_ok": true,
+      "words": 305,
+      "max_words": 506,
+      "attempts": 1
+    },
+    "general": {
+      "text_1783327926": {
+        "length_ok": true,
+        "words": 329,
+        "max_words": 506,
+        "attempts": 1
+      },
+      "text_1783327159": {
+        "length_ok": true,
+        "words": 338,
+        "max_words": 450,
+        "attempts": 1
+      },
+      "text_1783329129": {
+        "length_ok": true,
+        "words": 403,
+        "max_words": 498,
+        "attempts": 1
+      },
+      "text_1783329446": {
+        "length_ok": true,
+        "words": 329,
+        "max_words": 406,
+        "attempts": 1
+      },
+      "text_1783331545": {
+        "length_ok": true,
+        "words": 375,
+        "max_words": 536,
+        "attempts": 1
+      },
+      "text_1783332108": {
+        "length_ok": true,
+        "words": 294,
+        "max_words": 324,
+        "attempts": 1
+      }
+    }
+  }
+}

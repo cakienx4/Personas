@@ -1,0 +1,48 @@
+{
+  "uuid": "cfcda4b7a13b473d85ba994019dc8319",
+  "raw_fields": {
+    "uuid": "cfcda4b7a13b473d85ba994019dc8319",
+    "professional_persona": "Minh là một người buôn bán gạo và hàng hóa truyền thống. Anh có kinh nghiệm trong việc cân đong đo đấu, đàm phán giá cả và xây dựng mối quan hệ với người bán và người mua.",
+    "sports_persona": "Minh thích chơi bóng đá vào cuối tuần. Anh là thành viên của một đội bóng đá ở làng và thường xuyên tham gia các trận đấu giao hữu trong làng. Anh cũng thích xem các trận đấu của CLB bóng đá Hà Nội trên truyền hình.",
+    "arts_persona": "Minh là người yêu thích nghệ thuật truyền thống. Anh thường xuyên tham dự các buổi diễn tại Nhà hát lớn Hà Nội và thích ngắm nhìn các di tích văn hóa ở Thủ đô.",
+    "travel_persona": "Minh thích tham quan các di tích lịch sử trong nước. Anh muốn đi đến Lăng Bác và Văn Miếu, nhưng vẫn còn ngần ngại vì sợ các chuyến đi xa sẽ ảnh hưởng đến công việc kinh doanh.",
+    "culinary_persona": "Minh thích ăn phở và bánh cuốn. Anh cũng thường xuyên nấu các món ăn truyền thống của người Hà Nội như bún chả và cốm. Tuy nhiên, anh cũng có thói quen ăn vặt nhiều, đặc biệt là bánh rán và kẹo dừa.",
+    "persona": "Lê Văn Minh là một thanh niên trung niên từ làng cổ Đồng Bằng, nơi vẫn còn giữ gìn nét văn hóa truyền thống. Anh sinh ra và lớn lên trong không khí của lễ hội Gióng, với những tiếng trống hội vang vọng và mùi hương cốm đồng quê mỗi khi thu về.",
+    "cultural_background": "Minh sinh ra trong một gia đình ở làng cổ, nơi vẫn giữ gìn truyền thống quan họ và hát xẩm. Nhà anh được dựng trên một mảnh đất rộng, có vườn cây ăn trái và chuồng gà. Minh quen với âm thanh của tiếng trống hội Gióng hàng năm và hương cốm đồng quê mỗi khi thu về.",
+    "skills_and_expertise": "Minh có năng khiếu đàm phán và kinh nghiệm trong việc mua bán lúa gạo, hàng hóa. Anh thạo việc cân đong đo đấu, tính toán giá cả và tạo dựng mối quan hệ với người bán và người mua.",
+    "skills_and_expertise_list": "['Đàm phán', 'Đánh giá hàng hóa', 'Tính toán lợi nhuận', 'Quản lý kho hàng', 'Xây dựng mối quan hệ', 'Phân tích thị trường']",
+    "hobbies_and_interests": "Minh thích tham gia các trò chơi cờ vua và đánh cờ tướng. Anh cũng thường xuyên tập thể dục vào buổi sáng và thích xem phim truyền hình, đặc biệt là các bộ phim hài.",
+    "hobbies_and_interests_list": "['Chơi cờ vua', 'Đánh cờ tướng', 'Xem phim truyền hình', 'Tập thể dục', 'Ngắm cảnh hồ', 'Chơi trò chơi điện tử']",
+    "career_goals_and_ambitions": "Minh mong muốn mở rộng kinh doanh, có thể chuyển từ buôn lúa gạo sang kinh doanh thực phẩm sạch. Anh cũng hy vọng có thể xây dựng một cơ ngơi vững chắc cho gia đình mình.",
+    "sex": "Nam",
+    "age": 39,
+    "marital_status": "Độc thân",
+    "education_level": "Không học vấn",
+    "occupation": "Buôn bán / kinh doanh",
+    "zone": "Nông Thôn",
+    "region": "Thủ Đô Hà Nội",
+    "country": "Việt Nam"
+  },
+  "community": {
+    "Language": {
+      "level": 1,
+      "description": "Đơn giản — câu ngắn, từ ngữ đời thường, không dùng thuật ngữ chuyên môn"
+    },
+    "Topic": [
+      "Thị trường",
+      "Giá cả",
+      "Kinh doanh",
+      "Tài chính"
+    ],
+    "Domain": [
+      "Giao tiếp / Truyền thông"
+    ],
+    "Cultural": {
+      "orientation": "Truyền thống",
+      "region": "Thủ Đô Hà Nội",
+      "zone": "Nông Thôn",
+      "context": "Truyền thống — Nông Thôn — Thủ Đô Hà Nội"
+    },
+    "Prototype": "người trung niên nam, buôn bán / kinh doanh, trình độ không học vấn, sống tại nông thôn Thủ Đô Hà Nội. Văn phong phù hợp: Đơn giản — câu ngắn, từ ngữ đời thường, không dùng thuật ngữ chuyên môn. Chủ đề quan tâm chính: Thị trường, Giá cả, Kinh doanh. Định hướng văn hóa: Truyền thống."
+  }
+}

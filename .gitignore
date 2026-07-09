@@ -1,0 +1,24 @@
+# Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Env / secrets
+.env
+*.key
+
+# PyCharm
+.idea/
+
+# OS
+.DS_Store
+
+# Output có thể quá lớn để commit — bỏ comment nếu muốn giữ output mẫu trong repo
+# output/summaries/
+# output/inferences/

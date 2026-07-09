@@ -1,0 +1,3 @@
+Có siêu bão Ba Vì đang ở ngoài xa, cách Philippines rất xa. Các nhà dự báo cho biết bão này ít khả năng vào Biển Đông, nhưng từ ngày 9 đến 11/7, bão có thể làm gió trên biển mạnh lên, sóng cao từ 3 đến 5 mét, biển động rất mạnh ở cả vùng Hoàng Sa và Trường Sa.
+
+Dù bão ít vào đất liền, nhưng thời tiết vẫn khó lường. Bà con cần chú ý theo dõi tin tức để giữ an toàn cho nhà cửa và tàu thuyền. Mùa bão năm nay được dự báo ít hơn mọi năm, nhưng vẫn cần cẩn thận vì bão có thể thay đổi hướng đi bất ngờ.

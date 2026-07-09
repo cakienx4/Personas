@@ -1,0 +1,20 @@
+{
+  "xac_nhan": {
+    "age": 88,
+    "sex": "Nữ",
+    "life_stage": "người cao tuổi",
+    "education": "Không học vấn",
+    "occupation": "Nghỉ hưu",
+    "location": "Nông Thôn, Thành Phố Đà Nẵng, Việt Nam",
+    "marital_status": "Góa",
+    "family_context": "góa bụa",
+    "skills_summary": "Bà Nga có kinh nghiệm quản lý tiền bạc và chi tiêu hợp lý trong gia đình, đảm bảo các khoản thu nhập được sử dụng hiệu quả.  Bà cũng có khả năng nấu những món ăn truyền thống như mì Quảng, bánh tráng cuốn thịt heo.",
+    "professional": "Sau khi nghỉ hưu, bà Nga không còn tham gia vào môi trường làm việc, nhưng bà vẫn duy trì các mối quan hệ xã hội trong khu vực.",
+    "statement": "người cao tuổi nữ, 88 tuổi, góa bụa, trình độ không học vấn, nghề nghiệp: nghỉ hưu, sống tại nông thôn Thành Phố Đà Nẵng, Việt Nam. Chuyên môn: Bà Nga có kinh nghiệm quản lý tiền bạc và chi tiêu hợp lý trong gia đình, đảm bảo các khoản thu nhập được sử dụng hiệu quả.  Bà cũng có khả năng nấu những món ăn truyền thống như mì Quảng, bánh tráng cuốn thịt heo. Bối cảnh nghề nghiệp: Sau khi nghỉ hưu, bà Nga không còn tham gia vào môi trường làm việc, nhưng bà vẫn duy trì các mối quan hệ xã hội trong khu vực."
+  },
+  "gia_tuong": {
+    "Bổn phận": "Có bổn phận tự lo cho bản thân và duy trì các mối quan hệ gia đình và duy trì sức khỏe để sống độc lập và hỗ trợ thế hệ sau.",
+    "Mong muốn": "Bà Nga mong muốn tận hưởng tuổi già một cách vui vẻ và bình yên, tham dự các lễ hội và hoạt động cộng đồng, đồng thời duy trì sức khỏe tốt để chăm sóc bản thân và các cháu trong gia đình.",
+    "Niềm tin": "Tin rằng mình vẫn có thể sống vui vẻ, có ích và hòa nhập với cộng đồng dù đã lớn tuổi, đặc biệt khi có sự hỗ trợ từ gia đình và cộng đồng xung quanh."
+  }
+}

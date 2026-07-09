@@ -1,0 +1,1 @@
+Nông nghiệp nước mình đang thay đổi. Ở miền Tây, bà con làm nông kiểu mới để chống mặn. Còn ở miền Trung và Tây Nguyên, người ta đang làm kiểu kết hợp du lịch, cho khách đến tận vườn thu hoạch nông sản.
