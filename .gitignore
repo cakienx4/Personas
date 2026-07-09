@@ -1,7 +1,8 @@
 # Jupyter
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
-
+# data
+data/persona.csv
 # Python
 __pycache__/
 *.pyc
