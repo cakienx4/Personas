@@ -25,16 +25,13 @@ Chạy:
     python pipeline/main_gpt.py --rows 2 5 15 --texts text_1 text_2
     python pipeline/main_gpt.py --all-rows --texts text_1
 """
-
 import argparse
 import json
 import os
 import sys
-from types import SimpleNamespace
 
 import pandas as pd
 from dotenv import load_dotenv
-from openai import OpenAI
 
 load_dotenv()
 
@@ -47,7 +44,10 @@ from pipeline.worlds import build_worlds
 from pipeline.content_classifier import classify_content
 from pipeline.ontology_context import load_graph, build_ontology_context
 from pipeline.prompt_builder import build_prompt, build_neutral_prompt, build_brief_prompt
-from pipeline.summarizer_gpt import summarize_person, retry_generate, get_client, SUMMARY_MODEL_NAME
+from pipeline.summarizer_gpt import (
+    summarize_person, retry_generate, get_client, SUMMARY_MODEL_NAME, generate_content_gpt,
+)
+from pipeline.generation import generate_with_length_limit, generate_specific_with_length_limit
 from pipeline.text_store import load_custom_texts
 from pipeline.relevance import score_text_relevance
 
@@ -82,25 +82,7 @@ def save_text(path: str, content: str):
         f.write(content)
 
 
-# ── WRAPPER: mô phỏng interface "response.text" của Gemini bằng gpt-oss ────
-def generate_content_gpt(client: OpenAI, model: str, contents: str, config: dict = None):
-    """
-    Chữ ký giữ giống client.models.generate_content(model=, contents=, config=) của Gemini
-    để generate_with_length_limit() không cần sửa. Trả về object có thuộc tính .text.
-    """
-    temperature = (config or {}).get("temperature", 0.0)
-    response = client.chat.completions.create(
-        model=model,
-        messages=[{"role": "user", "content": contents}],
-        temperature=temperature,
-        max_tokens=8192,
-        extra_body={"reasoning_effort": "low"},
-    )
-    raw = response.choices[0].message.content
-    return SimpleNamespace(text=raw.strip() if raw else "")
-
-
-def process_one(row: dict, text: str, text_id: str, g, client: OpenAI) -> dict:
+def process_one(row: dict, text: str, text_id: str, g, client) -> dict:
     uuid = row.get("uuid", f"row_{row.get('index', 'unknown')}")
 
     # 1. Community + Worlds + Content classification
@@ -131,6 +113,7 @@ def process_one(row: dict, text: str, text_id: str, g, client: OpenAI) -> dict:
     neutral_prompt = build_neutral_prompt(text)
     general_summary, general_meta = generate_with_length_limit(
         generate_content_gpt,
+        retry_generate,
         source_text=text,
         base_kwargs={"client": client, "model": SUMMARY_MODEL_NAME, "contents": neutral_prompt,
                      "config": {"temperature": 0.0}},
@@ -142,7 +125,7 @@ def process_one(row: dict, text: str, text_id: str, g, client: OpenAI) -> dict:
     )
 
     # 5b. Tóm tắt "Riêng" — cá nhân hóa, tích hợp domain + type + genre
-    result, specific_meta = generate_specific_with_length_limit(row, text, g, client)
+    result, specific_meta = generate_specific_with_length_limit(summarize_person, retry_generate, row, text, g, client)
     save_text(
         os.path.join(DIR_SPECIFIC, f"{uuid}_{text_id}.md"),
         result["summary"],
@@ -159,72 +142,6 @@ def process_one(row: dict, text: str, text_id: str, g, client: OpenAI) -> dict:
         "text_id": text_id,
         "status": status,
     }
-
-
-def check_length(summary: str, source: str, ratio: float = 0.7) -> tuple[bool, int, int]:
-    src_words = len(source.split())
-    sum_words = len(summary.split())
-    return sum_words <= ratio * src_words, sum_words, int(ratio * src_words)
-
-
-MAX_LENGTH_RETRIES = 2
-
-
-def generate_with_length_limit(generate_fn, source_text: str, base_kwargs: dict,
-                                 prompt_key: str, ratio: float = 0.7):
-    """
-    generate_fn: hàm gọi model, ví dụ generate_content_gpt hoặc summarize_person
-    base_kwargs: kwargs truyền vào generate_fn, PHẢI chứa prompt_key (vd "contents" hoặc "text")
-                 để hàm này có thể sửa lại prompt/text ở các lần retry
-    Trả về: (summary_text, meta) — meta chứa thông tin OK/vi phạm để ghi vào guide
-    """
-    attempt = 0
-    feedback = ""
-    last_summary = None
-    last_count = None
-
-    while attempt <= MAX_LENGTH_RETRIES:
-        kwargs = dict(base_kwargs)
-        if feedback:
-            kwargs[prompt_key] = kwargs[prompt_key] + f"\n\n[YÊU CẦU BỔ SUNG DO VI PHẠM ĐỘ DÀI]\n{feedback}"
-
-        response = retry_generate(generate_fn, **kwargs)
-        summary = response.text.strip() if hasattr(response, "text") else response["summary"].strip()
-
-        ok, sum_words, max_words = check_length(summary, source_text, ratio)
-        last_summary, last_count = summary, sum_words
-
-        if ok:
-            return summary, {"length_ok": True, "words": sum_words, "max_words": max_words, "attempts": attempt + 1}
-
-        feedback = (f"Bản tóm tắt trước có {sum_words} từ, vượt quá giới hạn {max_words} từ "
-                    f"(tối đa {int(ratio*100)}% số từ bản gốc). Hãy viết lại NGẮN HƠN, "
-                    f"cắt bớt chi tiết phụ, không thêm câu mới.")
-        attempt += 1
-
-    # Hết lượt retry mà vẫn vượt — không âm thầm coi là OK
-    return last_summary, {"length_ok": False, "words": last_count, "max_words": max_words, "attempts": attempt}
-
-
-def generate_specific_with_length_limit(row, text, g, client, ratio: float = 0.7):
-    attempt = 0
-    feedback = ""
-    result = None
-    sum_words = None
-    max_words = None
-
-    while attempt <= MAX_LENGTH_RETRIES:
-        result = retry_generate(summarize_person, row, text, g, client, extra_instruction=feedback)
-        ok, sum_words, max_words = check_length(result["summary"], text, ratio)
-
-        if ok:
-            return result, {"length_ok": True, "words": sum_words, "max_words": max_words, "attempts": attempt + 1}
-
-        feedback = (f"Bản tóm tắt trước có {sum_words} từ, vượt quá giới hạn {max_words} từ. "
-                    f"Viết lại ngắn hơn, cắt chi tiết phụ, không thêm câu mới.")
-        attempt += 1
-
-    return result, {"length_ok": False, "words": sum_words, "max_words": max_words, "attempts": attempt}
 
 
 def generate_brief_mention(text: str, client) -> str:
@@ -276,6 +193,7 @@ def process_multi_texts(row: dict, texts: dict, g, client) -> dict:
         neutral_prompt = build_neutral_prompt(item["text"])
         g_summary, g_meta = generate_with_length_limit(
             generate_content_gpt,
+            retry_generate,
             source_text=item["text"],
             base_kwargs={"client": client, "model": SUMMARY_MODEL_NAME, "contents": neutral_prompt,
                          "config": {"temperature": 0.0}},
@@ -285,7 +203,9 @@ def process_multi_texts(row: dict, texts: dict, g, client) -> dict:
         general_meta_all[item["text_id"]] = g_meta
 
     # Tóm tắt đầy đủ cho văn bản phù hợp nhất
-    primary_result, primary_meta = generate_specific_with_length_limit(row, primary["text"], g, client)
+    primary_result, primary_meta = generate_specific_with_length_limit(
+        summarize_person, retry_generate, row, primary["text"], g, client
+    )
 
     # Tóm tắt cực ngắn cho các văn bản còn lại
     others_meta = []

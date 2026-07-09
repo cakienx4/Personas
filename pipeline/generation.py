@@ -2,12 +2,10 @@
 pipeline/generation.py
 
 Các hàm sinh tóm tắt có kiểm soát độ dài (retry nếu vượt tỉ lệ cho phép).
-Tách khỏi main.py để dùng chung giữa CLI (ghi file) và API (trả JSON) —
-tránh duplicate logic ở hai nơi.
+KHÔNG hardcode provider cụ thể (Gemini/gpt-oss) — generate_fn/summarize_fn/retry_fn
+được truyền vào từ nơi gọi (main.py, main_gpt.py, api/services/summary_service.py),
+để dùng chung được cho cả 2 model, tránh duplicate logic ở nhiều nơi.
 """
-
-from pipeline.summarizer_gemini import summarize_person, retry_generate
-
 
 MAX_LENGTH_RETRIES = 2
 
@@ -18,10 +16,13 @@ def check_length(summary: str, source: str, ratio: float = 0.7) -> tuple[bool, i
     return sum_words <= ratio * src_words, sum_words, int(ratio * src_words)
 
 
-def generate_with_length_limit(generate_fn, source_text: str, base_kwargs: dict,
+def generate_with_length_limit(generate_fn, retry_fn, source_text: str, base_kwargs: dict,
                                  prompt_key: str, ratio: float = 0.7):
     """
-    generate_fn: hàm gọi model, ví dụ client.models.generate_content
+    generate_fn: hàm gọi model — vd client.models.generate_content (Gemini)
+                 hoặc generate_content_gpt (gpt-oss, xem summarizer_gpt.py)
+    retry_fn: hàm retry TƯƠNG ỨNG cùng provider với generate_fn — retry_generate
+              của summarizer_gemini.py hoặc summarizer_gpt.py
     base_kwargs: kwargs truyền vào generate_fn, PHẢI chứa prompt_key (vd "contents")
                  để hàm này sửa lại prompt ở các lần retry
     """
@@ -36,7 +37,7 @@ def generate_with_length_limit(generate_fn, source_text: str, base_kwargs: dict,
         if feedback:
             kwargs[prompt_key] = kwargs[prompt_key] + f"\n\n[YÊU CẦU BỔ SUNG DO VI PHẠM ĐỘ DÀI]\n{feedback}"
 
-        response = retry_generate(generate_fn, **kwargs)
+        response = retry_fn(generate_fn, **kwargs)
         summary = response.text.strip() if hasattr(response, "text") else response["summary"].strip()
 
         ok, sum_words, max_words = check_length(summary, source_text, ratio)
@@ -53,7 +54,11 @@ def generate_with_length_limit(generate_fn, source_text: str, base_kwargs: dict,
     return last_summary, {"length_ok": False, "words": last_count, "max_words": max_words, "attempts": attempt}
 
 
-def generate_specific_with_length_limit(row, text, g, client, ratio: float = 0.7):
+def generate_specific_with_length_limit(summarize_fn, retry_fn, row, text, g, client, ratio: float = 0.7):
+    """
+    summarize_fn: summarize_person của summarizer_gemini.py hoặc summarizer_gpt.py
+    retry_fn: retry_generate TƯƠNG ỨNG cùng provider với summarize_fn
+    """
     attempt = 0
     feedback = ""
     result = None
@@ -61,7 +66,7 @@ def generate_specific_with_length_limit(row, text, g, client, ratio: float = 0.7
     max_words = None
 
     while attempt <= MAX_LENGTH_RETRIES:
-        result = retry_generate(summarize_person, row, text, g, client, extra_instruction=feedback)
+        result = retry_fn(summarize_fn, row, text, g, client, extra_instruction=feedback)
         ok, sum_words, max_words = check_length(result["summary"], text, ratio)
 
         if ok:

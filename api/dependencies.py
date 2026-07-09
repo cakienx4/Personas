@@ -12,25 +12,42 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from pipeline.ontology_context import load_graph
+from pipeline.summarizer_gpt import get_client as get_gpt_client
 
 DATA_CSV = PROJECT_ROOT / "data" / "sample50.csv"
-TTL_PATH = PROJECT_ROOT / "ontology" / "persona_analysis_3.ttl"   # khớp main.py
+TTL_PATH = PROJECT_ROOT / "ontology" / "persona_analysis_3.ttl"   # khớp main.py / main_gpt.py
 
 
 class AppState:
     def __init__(self):
         self.df: pd.DataFrame | None = None
         self.g = None
-        self.client: genai.Client | None = None
+        self.gemini_client: genai.Client | None = None
+        self.gpt_client = None  # OpenAI client trỏ tới RunAI endpoint (gpt-oss-120b)
 
     def load(self):
+        # Gemini — CHỈ khởi tạo nếu có key, KHÔNG raise để chặn cả server.
+        # Máy chỉ dùng gpt-oss có thể không cần GEMINI_API_KEY.
         api_key = os.environ.get("GEMINI_API_KEY", "")
-        if not api_key:
-            raise RuntimeError("Chưa set GEMINI_API_KEY (env hoặc .env)")
-        self.client = genai.Client(
-            api_key=api_key,
-            http_options=types.HttpOptions(timeout=60000),
-        )
+        if api_key:
+            self.gemini_client = genai.Client(
+                api_key=api_key,
+                http_options=types.HttpOptions(timeout=60000),
+            )
+        else:
+            print("[WARNING] Chưa set GEMINI_API_KEY — engine 'gemini' sẽ không dùng được, "
+                  "chỉ 'gpt_oss' hoạt động.")
+
+        try:
+            self.gpt_client = get_gpt_client()
+        except Exception as e:
+            print(f"[WARNING] Không khởi tạo được client gpt-oss: {e} — engine 'gpt_oss' sẽ không dùng được.")
+
+        if not self.gemini_client and not self.gpt_client:
+            raise RuntimeError(
+                "Không có engine nào khả dụng — thiếu GEMINI_API_KEY và client gpt-oss cũng lỗi."
+            )
+
         self.df = pd.read_csv(DATA_CSV)
         self.g = load_graph(str(TTL_PATH))
 
@@ -43,5 +60,4 @@ def get_persona_row(uuid: str) -> dict:
     if match.empty:
         raise HTTPException(status_code=404, detail=f"Không tìm thấy uuid={uuid}")
     row = match.iloc[0]
-
     return {k: (v.item() if hasattr(v, "item") else v) for k, v in row.to_dict().items()}

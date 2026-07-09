@@ -28,12 +28,40 @@
       "level": 1,
       "description": "Đơn giản — câu ngắn, từ ngữ đời thường, không dùng thuật ngữ chuyên môn"
     },
-    "Topic": [
-      "Sức khỏe",
-      "Đời sống",
-      "Gia đình",
-      "Cộng đồng"
-    ],
+    "Topic": {
+      "hard": [
+        "Sức khỏe",
+        "Đời sống",
+        "Thực tế"
+      ],
+      "soft": {
+        "Thể thao": {
+          "subtopic": null,
+          "intensity": 0.3,
+          "summary": "Bà Nga thích tập các môn thể thao nhẹ nhàng như đi bộ và tập dưỡng sinh, đặc biệt là vào những ngày cuối tuần."
+        },
+        "Nghệ thuật": {
+          "subtopic": null,
+          "intensity": 0.0,
+          "summary": "Bà Nga tham dự các buổi xem bài chòi và lễ hội pháo hoa, những hoạt động văn hóa quan trọng trong sinh hoạt cộng đồng tại Đà Nẵng."
+        },
+        "Du lịch": {
+          "subtopic": null,
+          "intensity": 0.3,
+          "summary": "Bà Nga thích tham quan các điểm du lịch quanh khu vực thành phố Đà Nẵng, đặc biệt là các lễ hội lớn và các khu nghỉ dưỡng gần biển."
+        },
+        "Ẩm thực": {
+          "subtopic": null,
+          "intensity": 0.3,
+          "summary": "Bà Nga thích nấu ăn và có thể nấu những món ăn truyền thống như mì Quảng và bánh tráng cuốn thịt heo."
+        },
+        "Sở thích khác": {
+          "subtopic": null,
+          "intensity": 0.6,
+          "summary": "Bà Nga thích tham dự các lễ hội, đặc biệt là lễ hội pháo hoa. Bà cũng có sở thích trồng rau trong vườn nhà, chăm sóc các loại cây ăn trái và nuôi gà."
+        }
+      }
+    },
     "Domain": [
       "Nấu ăn / Ẩm thực",
       "Quản lý / Tổ chức"
@@ -44,6 +72,6 @@
       "zone": "Nông Thôn",
       "context": "Truyền thống — Nông Thôn — Thành Phố Đà Nẵng"
     },
-    "Prototype": "người cao tuổi nữ, nghỉ hưu, trình độ không học vấn, sống tại nông thôn Thành Phố Đà Nẵng. Văn phong phù hợp: Đơn giản — câu ngắn, từ ngữ đời thường, không dùng thuật ngữ chuyên môn. Chủ đề quan tâm chính: Sức khỏe, Đời sống, Gia đình. Định hướng văn hóa: Truyền thống."
+    "Prototype": "người cao tuổi nữ, nghỉ hưu, trình độ không học vấn, sống tại nông thôn Thành Phố Đà Nẵng. Văn phong phù hợp: Đơn giản — câu ngắn, từ ngữ đời thường, không dùng thuật ngữ chuyên môn. Chủ đề quan tâm chính: Sức khỏe, Đời sống, Thực tế. Định hướng văn hóa: Truyền thống."
   }
 }

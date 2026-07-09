@@ -9,7 +9,7 @@ router = APIRouter()
 @router.post("", response_model=SummarizeResponse)
 async def summarize(req: SummarizeRequest):
     try:
-        return await run_summarize(req.uuid, req.text, req.ratio)
+        return await run_summarize(req.uuid, req.text, req.ratio, req.engine)
 
     except HTTPException:
         raise  # 404 từ get_persona_row, giữ nguyên
@@ -19,11 +19,11 @@ async def summarize(req: SummarizeRequest):
 
     except Exception as e:
         msg = str(e)
-        if any(k in msg for k in ("API_KEY_INVALID", "PERMISSION_DENIED", "UNAUTHENTICATED")):
+        if any(k in msg for k in ("API_KEY_INVALID", "PERMISSION_DENIED", "UNAUTHENTICATED", "401")):
             raise HTTPException(
                 status_code=502,
-                detail=f"GEMINI_API_KEY không hợp lệ hoặc không có quyền truy cập: {msg}",
+                detail=f"Xác thực với model thất bại (kiểm tra GEMINI_API_KEY hoặc endpoint RunAI): {msg}",
             )
-        if "RESOURCE_EXHAUSTED" in msg or "429" in msg:
-            raise HTTPException(status_code=429, detail=f"Gemini quota đã hết: {msg}")
+        if "RESOURCE_EXHAUSTED" in msg or "429" in msg or "rate" in msg.lower():
+            raise HTTPException(status_code=429, detail=f"Model quota/rate limit: {msg}")
         raise HTTPException(status_code=502, detail=f"Lỗi khi sinh tóm tắt: {msg}")

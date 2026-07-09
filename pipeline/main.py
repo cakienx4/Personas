@@ -16,15 +16,14 @@ Kết quả sinh ra cho mỗi cặp (person, text):
 Chạy:
     1: nhập văn bản (chạy nhiều lần để thêm nhiều văn bản/chủ đề)
     python pipeline/input_text.py
-    
+
     2: chạy pipeline, tự động xếp hạng và tóm tắt ưu tiên
     python pipeline/main.py --rows 2 5 15 --custom-texts
-    
+
     # Cách cũ vẫn dùng được cho evaluation
     python pipeline/main.py --rows 2 5 15 --texts text_1 text_2
     python pipeline/main.py --all-rows --texts text_1
 """
-
 import argparse
 import json
 import os
@@ -115,6 +114,7 @@ def process_one(row: dict, text: str, text_id: str, g, client: genai.Client) -> 
     neutral_prompt = build_neutral_prompt(text)
     general_summary, general_meta = generate_with_length_limit(
         client.models.generate_content,
+        retry_generate,
         source_text=text,
         base_kwargs={"model": SUMMARY_MODEL_NAME, "contents": neutral_prompt, "config": {"temperature": 0.0}},
         prompt_key="contents",
@@ -125,7 +125,7 @@ def process_one(row: dict, text: str, text_id: str, g, client: genai.Client) -> 
     )
 
     # 5b. Tóm tắt "Riêng" — cá nhân hóa, tích hợp domain + type + genre
-    result, specific_meta = generate_specific_with_length_limit(row, text, g, client)
+    result, specific_meta = generate_specific_with_length_limit(summarize_person, retry_generate, row, text, g, client)
     save_text(
         os.path.join(DIR_SPECIFIC, f"{uuid}_{text_id}.md"),
         result["summary"],
@@ -175,7 +175,7 @@ def process_multi_texts(row: dict, texts: dict, g, client) -> dict:
     scored = []
     for text_id, text in texts.items():
         content_meta = classify_content(text)
-        score = score_text_relevance(row, community, content_meta) 
+        score = score_text_relevance(row, community, content_meta)
         scored.append({"text_id": text_id, "text": text,
                         "content_meta": content_meta, "score": score})
     scored.sort(key=lambda x: x["score"], reverse=True)
@@ -189,6 +189,7 @@ def process_multi_texts(row: dict, texts: dict, g, client) -> dict:
         neutral_prompt = build_neutral_prompt(item["text"])
         g_summary, g_meta = generate_with_length_limit(
             client.models.generate_content,
+            retry_generate,
             source_text=item["text"],
             base_kwargs={"model": SUMMARY_MODEL_NAME, "contents": neutral_prompt,
                          "config": {"temperature": 0.0}},
@@ -198,7 +199,9 @@ def process_multi_texts(row: dict, texts: dict, g, client) -> dict:
         general_meta_all[item["text_id"]] = g_meta
 
     # Tóm tắt đầy đủ cho văn bản phù hợp nhất
-    primary_result, primary_meta = generate_specific_with_length_limit(row, primary["text"], g, client)
+    primary_result, primary_meta = generate_specific_with_length_limit(
+        summarize_person, retry_generate, row, primary["text"], g, client
+    )
 
     # Tóm tắt cực ngắn cho các văn bản còn lại
     others_meta = []

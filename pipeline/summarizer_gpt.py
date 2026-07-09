@@ -4,11 +4,12 @@ pipeline/summarizer_gpt.py
 Module tóm tắt văn bản cá nhân hóa theo persona.
 Bản dùng model gpt-oss-120b (OpenAI-compatible endpoint trên RunAI),
 thay cho Gemini trong summarizer_gemini.py. Dùng chung cho pipeline
-chính (main.py) và evaluation (cq_validator_gpt.py).
+chính (main_gpt.py), evaluation (cq_validator_gpt.py), và API (api/).
 """
 
 import re
 import time
+from types import SimpleNamespace
 
 import httpx
 from openai import OpenAI
@@ -23,6 +24,8 @@ MODEL_NAME = "gpt-oss-120b"
 API_KEY    = "EMPTY"
 
 SUMMARY_MODEL_NAME = MODEL_NAME
+
+MAX_RETRY_ATTEMPTS = 5  # đồng bộ với summarizer_gemini.py — tránh retry vô hạn khi endpoint lỗi kéo dài
 
 
 def get_client() -> OpenAI:
@@ -41,18 +44,26 @@ def get_client() -> OpenAI:
 def retry_generate(func, *args, **kwargs):
     """
     Gọi lại hàm khi gặp lỗi tạm thời từ endpoint gpt-oss-120b (rate limit, quá tải).
+    Giới hạn tối đa MAX_RETRY_ATTEMPTS lần — sau đó raise lỗi thay vì lặp vô hạn.
     """
+    attempt = 0
     while True:
         try:
             return func(*args, **kwargs)
 
         except Exception as e:
             msg = str(e)
+            attempt += 1
+
+            if attempt > MAX_RETRY_ATTEMPTS:
+                raise RuntimeError(
+                    f"gpt-oss-120b vẫn lỗi sau {MAX_RETRY_ATTEMPTS} lần retry: {msg}"
+                ) from e
 
             if any(k in msg for k in ("429", "rate", "RESOURCE_EXHAUSTED", "overloaded")):
                 match = re.search(r"retry in ([0-9.]+)s", msg, re.IGNORECASE)
                 wait = float(match.group(1)) + 2 if match else 35
-                print(f"\nRate limit. Đợi {wait:.1f}s...")
+                print(f"\nRate limit. Đợi {wait:.1f}s... (lần {attempt}/{MAX_RETRY_ATTEMPTS})")
                 time.sleep(wait)
                 continue
 
@@ -93,3 +104,26 @@ def summarize_person(row: dict, text: str, g, client: OpenAI,
         "worlds": worlds,
         "prompt_len": len(prompt),
     }
+
+
+def generate_content_gpt(client: OpenAI, model: str, contents: str, config: dict | None = None):
+    """
+    Adapter: mô phỏng interface response.text của Gemini (client.models.generate_content)
+    bằng gpt-oss (client.chat.completions.create), để dùng chung được với
+    pipeline/generation.py::generate_with_length_limit — hàm này gọi generate_fn(**kwargs)
+    rồi đọc response.text, bất kể provider nào.
+
+    Trước đây hàm này nằm trong main_gpt.py (chỉ CLI dùng được); chuyển sang đây để
+    api/services/summary_service.py cũng import được mà không phải kéo theo argparse
+    và các phần CLI-only khác của main_gpt.py.
+    """
+    temperature = (config or {}).get("temperature", 0.0)
+    response = client.chat.completions.create(
+        model=model,
+        messages=[{"role": "user", "content": contents}],
+        temperature=temperature,
+        max_tokens=8192,
+        extra_body={"reasoning_effort": "low"},
+    )
+    raw = response.choices[0].message.content
+    return SimpleNamespace(text=raw.strip() if raw else "")
