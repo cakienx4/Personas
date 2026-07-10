@@ -5,7 +5,6 @@ from api.services.summary_service import run_summarize
 
 router = APIRouter()
 
-
 @router.post("", response_model=SummarizeResponse)
 async def summarize(req: SummarizeRequest):
     try:

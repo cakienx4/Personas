@@ -4,17 +4,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from fastapi import FastAPI
-
 from api.dependencies import app_state
 from api.routers import profiles, inferences, communities, summarize
-
-
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     app_state.load()
     yield
-
 
 app = FastAPI(title="Personas API", lifespan=lifespan)
 app.include_router(summarize.router, prefix="/summarize", tags=["summarize"])

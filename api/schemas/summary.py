@@ -1,7 +1,6 @@
 from typing import Any, Literal
 from pydantic import BaseModel, Field
 
-
 class SummarizeRequest(BaseModel):
     uuid: str = Field(..., min_length=1)
     text: str = Field(..., min_length=1, description="Văn bản đầu vào cần tóm tắt")
@@ -10,13 +9,11 @@ class SummarizeRequest(BaseModel):
         "gemini", description="Model dùng để sinh tóm tắt: gemini hoặc gpt_oss (gpt-oss-120b qua RunAI)"
     )
 
-
 class LengthMeta(BaseModel):
     length_ok: bool
     words: int
     max_words: int
     attempts: int
-
 
 class SummarizeResponse(BaseModel):
     uuid: str

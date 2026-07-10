@@ -1,15 +1,16 @@
 import json
 import os
 
+
 def get_language(education_level: str, age: int) -> dict:
     edu_map = {
-        "Không học vấn":        1,
-        "Tiểu học":             1,
-        "THCS":                 2,
-        "THPT":                 2,
+        "Không học vấn": 1,
+        "Tiểu học": 1,
+        "THCS": 2,
+        "THPT": 2,
         "Trung cấp / Cao đẳng": 3,
-        "Đại học":              3,
-        "Sau đại học":          4,
+        "Đại học": 3,
+        "Sau đại học": 4,
     }
     level = edu_map.get(education_level, 2)
 
@@ -37,7 +38,7 @@ def get_topic(occupation: str, age: int, row: dict = None) -> dict:
       }
     }
     """
-    occupation_map = { "...": "giữ nguyên như cũ" }
+    occupation_map = {"...": "giữ nguyên như cũ"}
     hard_topics = occupation_map.get(occupation, ["Đời sống", "Thực tế"])
     if age >= 60 and "Sức khỏe" not in hard_topics:
         hard_topics = ["Sức khỏe"] + hard_topics
@@ -74,6 +75,7 @@ def get_topic(occupation: str, age: int, row: dict = None) -> dict:
 
     return {"hard": hard_topics, "soft": soft}
 
+
 _DOMAIN_KEYWORDS_PATH = os.path.join(
     os.path.dirname(__file__), "..", "data", "domain_keywords.json"
 )
@@ -81,15 +83,16 @@ _DOMAIN_KEYWORDS_PATH = os.path.join(
 with open(_DOMAIN_KEYWORDS_PATH, encoding="utf-8") as f:
     _DOMAIN_DATA = json.load(f)
 
-DOMAIN_KEYWORDS   = _DOMAIN_DATA["domains"]
+DOMAIN_KEYWORDS = _DOMAIN_DATA["domains"]
 KEYWORD_RELATIONS = _DOMAIN_DATA.get("keyword_relations", [])
-DOMAIN_PRIORITY   = _DOMAIN_DATA.get("domain_priority", [])
-SOFT_TOPICS       = _DOMAIN_DATA.get("soft_topics", {})          # MỚI
-INTENSITY_MARKERS = _DOMAIN_DATA.get("intensity_markers", {})    # MỚI
+DOMAIN_PRIORITY = _DOMAIN_DATA.get("domain_priority", [])
+SOFT_TOPICS = _DOMAIN_DATA.get("soft_topics", {})  # MỚI
+INTENSITY_MARKERS = _DOMAIN_DATA.get("intensity_markers", {})  # MỚI
 
 DOMAIN_SCORE_THRESHOLD = 0.6
-PRIORITY_TIE_MARGIN    = 0.15
+PRIORITY_TIE_MARGIN = 0.15
 INTENSITY_HIGH_THRESHOLD = 0.5
+
 
 def _score_keyword_groups(text: str, keyword_groups: dict, relations: list = None) -> dict:
     """
@@ -134,6 +137,7 @@ def _score_intensity(text: str) -> float:
             score = max(score, weight)
     return score
 
+
 def get_domain(skills_and_expertise: str, occupation: str) -> list:
     scores = _score_keyword_groups(skills_and_expertise, DOMAIN_KEYWORDS, KEYWORD_RELATIONS)
     domains = {d for d, s in scores.items() if s >= DOMAIN_SCORE_THRESHOLD}
@@ -141,42 +145,48 @@ def get_domain(skills_and_expertise: str, occupation: str) -> list:
 
     if not domains:
         occ_domain_map = {
-            "Buôn bán / kinh doanh":          ["Tài chính / Kế toán", "Quản lý / Tổ chức"],
-            "Kỹ thuật viên / kỹ sư":          ["Công nghệ / Kỹ thuật số"],
-            "Y tế / dược":                    ["Y tế / Chăm sóc"],
-            "Nghiên cứu / học thuật":         ["Quản lý / Tổ chức", "Giao tiếp / Truyền thông"],
-            "Freelancer / làm tự do":         ["Sáng tạo / Nghệ thuật", "Công nghệ / Kỹ thuật số"],
-            "Tài xế / giao hàng":             ["Vận tải / Giao nhận"],
-            "Nông nghiệp / ngư nghiệp":       ["Nông nghiệp / Tự nhiên"],
+            "Buôn bán / kinh doanh": ["Tài chính / Kế toán", "Quản lý / Tổ chức"],
+            "Kỹ thuật viên / kỹ sư": ["Công nghệ / Kỹ thuật số"],
+            "Y tế / dược": ["Y tế / Chăm sóc"],
+            "Nghiên cứu / học thuật": ["Quản lý / Tổ chức", "Giao tiếp / Truyền thông"],
+            "Freelancer / làm tự do": ["Sáng tạo / Nghệ thuật", "Công nghệ / Kỹ thuật số"],
+            "Tài xế / giao hàng": ["Vận tải / Giao nhận"],
+            "Nông nghiệp / ngư nghiệp": ["Nông nghiệp / Tự nhiên"],
         }
         domains = set(occ_domain_map.get(occupation, ["Đời sống thực tế"]))
 
     return sorted(domains)
 
+
 def get_cultural(cultural_background: str, region: str, zone: str) -> dict:
     text = cultural_background.lower()
 
     traditional_signals = [
-        "truyền thống", "lễ hội", "phong tục", "tập quán", "bài chòi",
+        "truyền thống", "phong tục", "tập quán", "bài chòi",
         "quan họ", "hát xẩm", "làng", "tổ tiên", "tín ngưỡng", "đình làng"
-    ]
+    ]  # đã bỏ "lễ hội" — quá chung chung, không phân biệt được truyền thống/hiện đại
 
     open_signals = [
         "quốc tế", "hiện đại", "đa văn hóa", "nước ngoài", "toàn cầu",
-        "hội nhập", "công nghệ", "startup", "mạng xã hội"
+        "hội nhập", "công nghệ", "startup", "mạng xã hội",
+        "chung cư", "căn hộ", "cao tầng", "đô thị"
     ]
+
+    blend_signals = ["pha trộn", "kết hợp giữa", "vừa truyền thống vừa", "giao thoa"]
 
     trad_score = sum(1 for s in traditional_signals if s in text)
     open_score = sum(1 for s in open_signals if s in text)
+    is_blend = any(s in text for s in blend_signals)
 
-    if trad_score > open_score:
+    if is_blend and abs(trad_score - open_score) <= 1:
+        orientation = "Trung dung"
+    elif trad_score > open_score:
         orientation = "Truyền thống"
     elif open_score > trad_score:
         orientation = "Cởi mở / Hội nhập"
     else:
         orientation = "Trung dung"
 
-    # Zone bổ trợ
     if zone == "Nông Thôn" and orientation == "Trung dung":
         orientation = "Truyền thống"
 
@@ -217,10 +227,10 @@ def get_prototype(row: dict, language: dict, topic: list, cultural: dict) -> str
 # ── HÀM TỔNG HỢP ─────────────────────────────────────────────────────────────
 
 def determine_community(row: dict) -> dict:
-    language  = get_language(row["education_level"], row["age"])
-    topic     = get_topic(row["occupation"], row["age"], row)
-    domain    = get_domain(row["skills_and_expertise"], row["occupation"])
-    cultural  = get_cultural(row["cultural_background"], row["region"], row["zone"])
+    language = get_language(row["education_level"], row["age"])
+    topic = get_topic(row["occupation"], row["age"], row)
+    domain = get_domain(row["skills_and_expertise"], row["occupation"])
+    cultural = get_cultural(row["cultural_background"], row["region"], row["zone"])
     prototype = get_prototype(row, language, topic["hard"], cultural)
 
     return {
@@ -238,6 +248,6 @@ if __name__ == "__main__":
     for i in [2, 5, 15]:  # bà Nga, người buôn bán, freelancer
         row = df.iloc[i].to_dict()
         community = determine_community(row)
-        print(f"\n{'='*60}")
+        print(f"\n{'=' * 60}")
         print(f"Person {i}: {row['persona']}...")
         print(json.dumps(community, ensure_ascii=False, indent=2))

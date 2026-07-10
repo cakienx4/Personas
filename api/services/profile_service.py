@@ -3,7 +3,6 @@ from pipeline.worlds import build_worlds
 
 from api.dependencies import get_persona_row
 
-
 def get_profile(uuid: str) -> dict:
     row = get_persona_row(uuid)
     community = determine_community(row)

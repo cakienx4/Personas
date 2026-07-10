@@ -21,5 +21,6 @@ venv/
 .DS_Store
 
 # Output có thể quá lớn để commit — bỏ comment nếu muốn giữ output mẫu trong repo
-# output/summaries/
-# output/inferences/
+output/summaries/
+output/inferences/
+obo_to_html.py

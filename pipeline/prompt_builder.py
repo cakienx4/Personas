@@ -101,6 +101,15 @@ def build_prompt(row: dict, text: str, g, content_meta: dict = None) -> str:
         f"1 câu, không đi vào chi tiết cụ thể."
     )
 
+    # thêm sau đoạn cultural_instruction trong build_prompt()
+    family_context_str = xac_nhan["family_context"]
+    marital_instruction = (
+        f"Tình trạng hôn nhân/gia đình của người dùng: {family_context_str}. Nếu văn bản đề cập song song "
+        f"nội dung phù hợp gia đình/trẻ nhỏ VÀ nội dung phù hợp cá nhân/độc lập (ví dụ: điểm đến gia đình vs. "
+        f"trải nghiệm cá nhân), đây là dạng phân nhánh theo Rule 1b: nhánh khớp với tình trạng hôn nhân trên "
+        f"PHẢI giữ đầy đủ, chi tiết; nhánh còn lại chỉ nêu ngắn gọn 1 câu, không đi vào chi tiết cụ thể."
+    )
+
     if content_meta is None:
         content_meta = classify_content(text)
     print(f"[DEBUG] type={content_meta['type']} | genre={content_meta['genre']} | text[:30]={text[:30]}")
@@ -109,11 +118,27 @@ def build_prompt(row: dict, text: str, g, content_meta: dict = None) -> str:
     text_genre = content_meta["genre"]
     type_instruction = TYPE_INSTRUCTIONS.get(text_type, "")
 
+    # Dùng để khớp với soft_topics (sở thích cá nhân) — PHẢI dùng tên nhãn ngắn, khớp key trong community.py
     GENRE_TO_INTEREST_LABEL = {
         "Du lịch": "Du lịch",
         "Nấu ăn / Ẩm thực": "Ẩm thực",
         "Thể thao": "Thể thao",
         "Giải trí / Văn hóa": "Nghệ thuật",
+    }
+
+    # Dùng để khớp với community["Domain"] (chuyên môn/expertise) — giữ nguyên như đã fix cho CQ8/CQ11
+    GENRE_TO_DOMAIN_LABELS = {
+        "Tài chính / Kế toán": {"Tài chính / Kế toán", "Quản lý / Tổ chức"},
+        "Công nghệ / Kỹ thuật số": {"Công nghệ / Kỹ thuật số", "Sáng tạo / Nghệ thuật"},
+        "Giải trí / Văn hóa": {"Sáng tạo / Nghệ thuật"},
+        "Du lịch": {"Du lịch / Lữ hành"},
+        "Nấu ăn / Ẩm thực": {"Nấu ăn / Ẩm thực"},
+        "Y tế / Chăm sóc": {"Y tế / Chăm sóc"},
+        "Thể thao": {"Thể thao"},
+        "Giáo dục": {"Giáo dục / Học thuật"},
+        "Chính trị / Pháp luật": {"Pháp lý / Pháp luật"},
+        "Môi trường": {"Nông nghiệp / Tự nhiên"},
+        "Thời sự / Xã hội": set(),
     }
 
     relevant_label = GENRE_TO_INTEREST_LABEL.get(text_genre)
@@ -124,7 +149,10 @@ def build_prompt(row: dict, text: str, g, content_meta: dict = None) -> str:
             f"Sở thích cá nhân liên quan trực tiếp đến chủ đề văn bản — {relevant_label}: "
             f"{entry['summary']} (SOFT — chỉ ưu tiên khi KHÔNG mâu thuẫn với đặc trưng cứng, theo Rule 6). "
             f"HÃY DÙNG văn phong giàu hình ảnh, ẩn dụ, gợi cảm xúc khi mô tả nội dung liên quan đến "
-            f"'{relevant_label}'. Chỉ dẫn văn phong này ĐỘC LẬP với Rule 6 — Rule 6 không ghi đè lên văn phong."
+            f"'{relevant_label}'. LƯU Ý: chỉ dẫn này chỉ thay đổi CÁCH DIỄN ĐẠT câu chữ, KHÔNG được dùng để "
+            f"thay thế hoặc lược bỏ nội dung phân tích chuyên môn/kỹ thuật (nếu người dùng có domain chuyên môn "
+            f"trùng với lĩnh vực văn bản, xem 'Lĩnh vực văn bản' bên dưới) — 2 yêu cầu này phải cùng tồn tại "
+            f"trong bản tóm tắt, không đánh đổi cái này lấy cái kia."
         )
     else:
         interests_block = (
@@ -143,12 +171,16 @@ def build_prompt(row: dict, text: str, g, content_meta: dict = None) -> str:
         )
 
     user_domains = set(community["Domain"])
-    domain_overlap = text_genre in user_domains
+    overlap_domains = GENRE_TO_DOMAIN_LABELS.get(text_genre, set())
+    domain_overlap = bool(user_domains & overlap_domains)
 
     if domain_overlap:
         genre_depth_note = (
             f"Văn bản thuộc lĩnh vực '{text_genre}', trùng với chuyên môn người dùng đã có "
-            f"({', '.join(user_domains)}) — không cần giải thích khái niệm nền tảng của lĩnh vực này."
+            f"({', '.join(user_domains)}) — không cần giải thích khái niệm nền tảng của lĩnh vực này. "
+            f"BẮT BUỘC giữ lại các thuật ngữ/chi tiết kỹ thuật chuyên môn xuất hiện trong văn bản gốc "
+            f"(ví dụ: kỹ thuật, phong cách, trường phái, phối màu, bố cục, chất liệu...) — không được thay "
+            f"bằng mô tả cảm xúc/hình ảnh chung chung, kể cả khi mục 'Chủ đề hứng thú' yêu cầu văn phong giàu hình ảnh."
         )
     else:
         genre_depth_note = (
@@ -199,6 +231,7 @@ def build_prompt(row: dict, text: str, g, content_meta: dict = None) -> str:
     Kiểu bài viết: {text_type} — {type_instruction}
     Lĩnh vực văn bản: {text_genre} — {genre_depth_note}
     Chủ đề hứng thú: {interests_block}
+    Góc độ hôn nhân/gia đình: {marital_instruction}
     Phong cách du lịch (nếu có nhánh nội dung khác nhau): {travel_branch_instruction if travel_branch_instruction else "Không áp dụng."}
 
     QUAN TRỌNG — kiểm tra trước khi viết: nếu hai người dùng khác nhau đọc cùng một văn bản gốc, hai bản tóm tắt của bạn PHẢI khác nhau rõ rệt về nội dung được giữ lại/nhấn mạnh, không chỉ khác nhau về cách diễn đạt câu chữ. Nếu bạn thấy bản tóm tắt mình sắp viết gần như có thể dùng chung cho bất kỳ ai, đó là dấu hiệu bạn đang tóm tắt trung lập thay vì lọc theo persona — hãy viết lại.

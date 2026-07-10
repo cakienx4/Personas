@@ -4,24 +4,24 @@
 
 | Thành phần | Giá trị |
 |---|---|
-| Feature Coverage | 100.0% (433/433) |
+| Feature Coverage | 99.6% (463/465) |
 | CQ Coverage | 85.0% (17/20) |
-| **Ontology Score** | **92.5%** |
+| **Ontology Score** | **92.3%** |
 
 ## Feature Coverage theo nhánh
 
 | Branch | Extracted Features | Covered Features | Coverage |
 |---|---|---|---|
-| professional_persona | 50 | 50 | 100.0% |
-| sports_persona | 32 | 32 | 100.0% |
-| arts_persona | 30 | 30 | 100.0% |
-| travel_persona | 41 | 41 | 100.0% |
-| culinary_persona | 37 | 37 | 100.0% |
-| persona | 42 | 42 | 100.0% |
-| cultural_background | 39 | 39 | 100.0% |
-| skills_and_expertise | 50 | 50 | 100.0% |
-| hobbies_and_interests | 72 | 72 | 100.0% |
-| career_goals_and_ambitions | 40 | 40 | 100.0% |
+| professional_persona | 55 | 55 | 100.0% |
+| sports_persona | 24 | 24 | 100.0% |
+| arts_persona | 35 | 35 | 100.0% |
+| travel_persona | 46 | 46 | 100.0% |
+| culinary_persona | 34 | 34 | 100.0% |
+| persona | 51 | 49 | 96.1% |
+| cultural_background | 50 | 50 | 100.0% |
+| skills_and_expertise | 60 | 60 | 100.0% |
+| hobbies_and_interests | 71 | 71 | 100.0% |
+| career_goals_and_ambitions | 39 | 39 | 100.0% |
 
 ## CQ Coverage
 

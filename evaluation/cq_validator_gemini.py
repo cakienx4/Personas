@@ -27,8 +27,8 @@ DATA_CSV = os.path.join(BASE_DIR, "..", "data", "sample50.csv")
 TTL_PATH = os.path.join(BASE_DIR, "..", "ontology", "persona_analysis_3.ttl")
 TEST_CASES_PATH = os.path.join(BASE_DIR, "cq_test_cases.json")
 
-OUT_MD = os.path.join(BASE_DIR, "cq_validation_report_gemini_1_3_5.md")
-OUT_JSON = os.path.join(BASE_DIR, "cq_validation_results_gemini_1_3_5.json")
+OUT_MD = os.path.join(BASE_DIR, "cq_validation_report_gemini_2.md")
+OUT_JSON = os.path.join(BASE_DIR, "cq_validation_results_gemini_2.json")
 
 SUMMARY_MODEL_NAME = "gemini-3.1-flash-lite"
 JUDGE_MODEL_NAME = "gemini-3.1-flash-lite"

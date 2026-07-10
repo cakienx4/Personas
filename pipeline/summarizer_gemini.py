@@ -16,7 +16,7 @@ from pipeline.prompt_builder import build_prompt
 
 SUMMARY_MODEL_NAME = "gemini-3.1-flash-lite"
 
-MAX_RETRY_ATTEMPTS = 5  # số lần retry tối đa cho lỗi tạm thời (429/503)
+MAX_RETRY_ATTEMPTS = 5  # số lần retry tối đa cho lỗi tạm thời
 
 def retry_generate(func, *args, **kwargs):
     """
