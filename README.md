@@ -141,62 +141,94 @@ python evaluation/ontology_score_gemini.py
 
 ## Chạy như REST API (FastAPI)
 
-Ngoài chạy batch qua `pipeline/main.py`, dự án có thể chạy như REST API real-time
-qua tầng `api/` — dùng chung logic với `pipeline/` (không duplicate code).
+Ngoài chạy batch qua `pipeline/main.py` (Gemini) / `pipeline/main_gpt.py` (gpt-oss-120b),
+dự án có thể chạy như REST API real-time qua tầng `api/` — dùng chung logic với
+`pipeline/` (không duplicate code), hỗ trợ chọn model qua tham số `engine`.
 
 ### Cấu trúc tầng API
 
     api/
     ├── main.py                   # FastAPI app, khởi tạo lifespan
-    ├── dependencies.py           # AppState: load CSV, ontology graph, genai.Client 1 lần khi startup
+    ├── config.py                 # Settings (pydantic-settings) — đọc .env
+    ├── dependencies.py           # AppState: load CSV, ontology graph, cả 2 client (Gemini + gpt-oss) 1 lần khi startup
+    ├── engines.py                # Bảng cấu hình engine dùng chung (gemini / gpt_oss)
+    ├── timeout_utils.py          # Wrapper timeout dùng chung cho mọi lệnh gọi LLM
     ├── schemas/                  # Pydantic request/response models
     │   ├── profile.py
     │   ├── inference.py
     │   ├── community.py
-    │   └── summary.py
+    │   ├── summary.py
+    │   └── multi_summary.py
     ├── routers/                  # Định nghĩa endpoint
     │   ├── profiles.py
     │   ├── inferences.py
     │   ├── communities.py
-    │   └── summarize.py
+    │   └── summarize.py          # gồm cả POST /summarize và POST /summarize/multi
     └── services/                 # Cầu nối router <-> pipeline, không chứa logic nghiệp vụ
     ├── profile_service.py
     ├── inference_service.py
     ├── community_service.py
-    └── summary_service.py
+    ├── summary_service.py
+    └── multi_summary_service.py
 
 ### Cài đặt & chạy
 
-1. Đảm bảo `.env` ở root project có: GEMINI_API_KEY= ...
+1. `.env` ở root project:
 2. Chạy server (từ root project):
 ```bash
 uvicorn api.main:app --reload
 ```
 
 3. Xem tài liệu API tự động tại: `http://localhost:8000/docs`
-4. Xuất hiện các endpoint, nhấn vào endpoint /summarize --> try it out --> nhập json các thông tin uuid, text --> execute
 
 ### Endpoint
 
 | Method | Path                    | Mô tả                                                    | Gọi LLM? |
-|--------|--------------------------|-----------------------------------------------------------|----------|
-| GET    | `/profiles/{uuid}`       | Profile chuẩn hóa + community + worlds cho 1 person        | Không    |
-| GET    | `/inferences/{uuid}`     | Chỉ 2 thế giới (xác nhận + giả tưởng)                      | Không    |
+|--------|--------------------------|-------------------------------------------------------------|----------|
+| GET    | `/profiles/{uuid}`       | Profile chuẩn hóa + community + worlds cho 1 person          | Không    |
+| GET    | `/inferences/{uuid}`     | Chỉ 2 thế giới (xác nhận + giả tưởng)                        | Không    |
 | GET    | `/communities/{uuid}`    | Chỉ community 5 chiều (Language/Topic/Domain/Cultural/Prototype) | Không |
-| POST   | `/summarize`             | Sinh tóm tắt Chung + Riêng cho 1 cặp (uuid, text)          | Có       |
+| POST   | `/summarize`             | Sinh tóm tắt Chung + Riêng cho 1 cặp (uuid, text)            | Có       |
+| POST   | `/summarize/multi`       | Sinh tóm tắt cho nhiều văn bản: Chung cho từng bài, Riêng đầy đủ cho bài phù hợp nhất, cực ngắn cho các bài còn lại | Có |
+
+### Chọn model — tham số `engine`
+
+Cả `/summarize` và `/summarize/multi` đều nhận tham số `engine`:
+- `"gemini"` (mặc định) — `gemini-3.1-flash-lite`
+- `"gpt_oss"` — `gpt-oss-120b` qua endpoint RunAI nội bộ
+
+Nếu server thiếu cấu hình cho engine được chọn (thiếu `GEMINI_API_KEY`, hoặc endpoint RunAI không khởi tạo được), API trả lỗi `503` rõ ràng thay vì crash.
 
 ### Ví dụ request `/summarize`
 
 ```json
 {
-  "uuid": "uuid trong file sample50.csv",
+  "uuid": "b4a879dc2a074fec9a83ed171d1a0bc9",
   "text": "Nội dung văn bản cần tóm tắt...",
-  "ratio": 0.7
+  "ratio": 0.7,
+  "engine": "gemini"
 }
 ```
 
-### Khác biệt so với `pipeline/main.py` (CLI)
+### Ví dụ request `/summarize/multi`
 
-- CLI (`main.py`) chạy batch, ghi 5 file output/(person, text) vào `output/`.
-- API (`api/`) chạy real-time từng request, trả JSON trực tiếp, **không ghi file**.
-- Cả hai dùng chung `pipeline/community.py`, `pipeline/worlds.py`, `pipeline/generation.py`, `pipeline/summarizer_gemini.py` — không duplicate logic nghiệp vụ.
+```json
+{
+  "uuid": "b4a879dc2a074fec9a83ed171d1a0bc9",
+  "texts": {
+    "text_1": "Nội dung văn bản 1...",
+    "text_2": "Nội dung văn bản 2..."
+  },
+  "ratio": 0.7,
+  "engine": "gemini"
+}
+```
+Tối đa 8 văn bản/request — endpoint gọi LLM tuần tự (N lần Chung + 1 lần Riêng + (N-1) lần cực ngắn), nên số văn bản lớn sẽ kéo dài thời gian phản hồi tương ứng.
+
+### Khác biệt so với `pipeline/main.py` / `main_gpt.py` (CLI)
+
+- CLI chạy batch, ghi 5 loại file output/(person, text) vào `output/`.
+- API chạy real-time từng request, trả JSON trực tiếp, **không ghi file**.
+- Cả CLI và API dùng chung `pipeline/community.py`, `pipeline/worlds.py`,
+  `pipeline/generation.py`, `pipeline/summarizer_gemini.py`, `pipeline/summarizer_gpt.py`
+  — không duplicate logic nghiệp vụ giữa 2 model hay giữa CLI/API.
