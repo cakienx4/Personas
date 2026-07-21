@@ -1,0 +1,1247 @@
+[
+  {
+    "id": "NN001",
+    "mo_ta_chung": "Công tác tại Bộ Khoa học và Công nghệ với vai trò Trưởng phòng, có 31 năm kinh nghiệm trong mảng An toàn thông tin; đang tập trung vào theo dõi, đôn đốc thực hiện các nhiệm vụ được giao trên địa bàn.",
+    "nganh_to": "Khoa học - Công nghệ - TT&TT",
+    "nganh_nho": "An toàn thông tin",
+    "chu_de": [
+      "Khoa học/Công nghệ"
+    ],
+    "cau_hoi_truoc_mat": "Nắm chính sách hỗ trợ doanh nghiệp khởi nghiệp đổi mới sáng tạo.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Bộ",
+      "ten": "Bộ Khoa học và Công nghệ"
+    },
+    "do_tuoi": 58,
+    "kinh_nghiem": {
+      "so_nam": 31,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN002",
+    "mo_ta_chung": "Chuyên viên tại Bộ Tài chính, 5 năm công tác trong lĩnh vực Quản lý tài sản công, hiện phụ trách xây dựng kế hoạch công tác và phối hợp liên ngành.",
+    "nganh_to": "Tài chính - Ngân sách",
+    "nganh_nho": "Quản lý tài sản công",
+    "chu_de": [
+      "Kinh tế/Tài chính",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Nắm chính sách thuế mới ban hành áp dụng cho doanh nghiệp và hộ kinh doanh.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Bộ",
+      "ten": "Bộ Tài chính"
+    },
+    "do_tuoi": 31,
+    "kinh_nghiem": {
+      "so_nam": 5,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN003",
+    "mo_ta_chung": "Công tác tại Sở Ngoại vụ tỉnh Vĩnh Long với vai trò Cán bộ, có 1 năm kinh nghiệm trong mảng Đa phương; đang tập trung vào tiếp nhận, xử lý phản ánh và giải quyết công việc liên quan người dân/đơn vị.",
+    "nganh_to": "Ngoại giao",
+    "nganh_nho": "Đa phương",
+    "chu_de": [
+      "Ngoại giao/Quan hệ quốc tế",
+      "Kinh tế/Tài chính"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật tình hình đàm phán các hiệp định thương mại, đầu tư song phương.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở Ngoại vụ",
+      "ten": "Sở Ngoại vụ tỉnh Vĩnh Long"
+    },
+    "do_tuoi": 26,
+    "kinh_nghiem": {
+      "so_nam": 1,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN004",
+    "mo_ta_chung": "Phó Giám đốc tại Tòa án nhân dân tỉnh Nghệ An, 30 năm công tác trong lĩnh vực Xây dựng pháp luật, hiện phụ trách theo dõi, đôn đốc thực hiện các nhiệm vụ được giao trên địa bàn.",
+    "nganh_to": "Tư pháp - Pháp luật",
+    "nganh_nho": "Xây dựng pháp luật",
+    "chu_de": [
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật các luật, nghị định mới có hiệu lực liên quan lĩnh vực phụ trách.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Tòa án nhân dân",
+      "ten": "Tòa án nhân dân tỉnh Nghệ An"
+    },
+    "do_tuoi": 54,
+    "kinh_nghiem": {
+      "so_nam": 30,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN005",
+    "mo_ta_chung": "Phó Giám đốc thuộc Sở Y tế tỉnh Lạng Sơn, chuyên trách lĩnh vực Dược - Trang thiết bị y tế với 21 năm kinh nghiệm; công việc hiện tại xoay quanh tiếp nhận, xử lý phản ánh và giải quyết công việc liên quan người dân/đơn vị.",
+    "nganh_to": "Y tế",
+    "nganh_nho": "Dược - Trang thiết bị y tế",
+    "chu_de": [
+      "Sức khỏe/Đời sống",
+      "Thời sự/Xã hội"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật chính sách bảo hiểm y tế và mức hưởng mới.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở Y tế",
+      "ten": "Sở Y tế tỉnh Lạng Sơn"
+    },
+    "do_tuoi": 46,
+    "kinh_nghiem": {
+      "so_nam": 21,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN006",
+    "mo_ta_chung": "Chuyên viên cao cấp thuộc Ban Chỉ đạo An ninh mạng quốc gia, chuyên trách lĩnh vực An ninh mạng quốc gia với 32 năm kinh nghiệm; công việc hiện tại xoay quanh theo dõi, đôn đốc thực hiện các nhiệm vụ được giao trên địa bàn.",
+    "nganh_to": "An ninh - Quốc phòng (hoạch định chính sách)",
+    "nganh_nho": "An ninh mạng quốc gia",
+    "chu_de": [
+      "Quốc phòng/An ninh",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Theo dõi diễn biến an ninh mạng, các sự cố tấn công mạng quy mô lớn gần đây.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Ban Chỉ đạo",
+      "ten": "Ban Chỉ đạo An ninh mạng quốc gia"
+    },
+    "do_tuoi": 55,
+    "kinh_nghiem": {
+      "so_nam": 32,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN007",
+    "mo_ta_chung": "Chuyên viên thuộc Sở Khoa học và Công nghệ tỉnh Cao Bằng, chuyên trách lĩnh vực Chuyển đổi số với 2 năm kinh nghiệm; công việc hiện tại xoay quanh tổng hợp báo cáo định kỳ và tham mưu chính sách.",
+    "nganh_to": "Khoa học - Công nghệ - TT&TT",
+    "nganh_nho": "Chuyển đổi số",
+    "chu_de": [
+      "Khoa học/Công nghệ"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật cảnh báo về lỗ hổng bảo mật, sự cố an toàn thông tin.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở KH&CN",
+      "ten": "Sở Khoa học và Công nghệ tỉnh Cao Bằng"
+    },
+    "do_tuoi": 25,
+    "kinh_nghiem": {
+      "so_nam": 2,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN008",
+    "mo_ta_chung": "Trưởng phòng tại Sở Tư pháp tỉnh Quảng Ngãi, 22 năm công tác trong lĩnh vực Kiểm sát, hiện phụ trách xây dựng kế hoạch công tác và phối hợp liên ngành.",
+    "nganh_to": "Tư pháp - Pháp luật",
+    "nganh_nho": "Kiểm sát",
+    "chu_de": [
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Nắm tiến độ thi hành án và các vướng mắc phát sinh trong thực tiễn.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở Tư pháp",
+      "ten": "Sở Tư pháp tỉnh Quảng Ngãi"
+    },
+    "do_tuoi": 44,
+    "kinh_nghiem": {
+      "so_nam": 22,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN009",
+    "mo_ta_chung": "Trưởng nhóm nghiệp vụ tại Bệnh viện Đa khoa tỉnh Khánh Hòa, 15 năm công tác trong lĩnh vực Y tế dự phòng, hiện phụ trách tiếp nhận, xử lý phản ánh và giải quyết công việc liên quan người dân/đơn vị.",
+    "nganh_to": "Y tế",
+    "nganh_nho": "Y tế dự phòng",
+    "chu_de": [
+      "Sức khỏe/Đời sống",
+      "Thời sự/Xã hội"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật chính sách bảo hiểm y tế và mức hưởng mới.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Bệnh viện",
+      "ten": "Bệnh viện Đa khoa tỉnh Khánh Hòa"
+    },
+    "do_tuoi": 38,
+    "kinh_nghiem": {
+      "so_nam": 15,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN010",
+    "mo_ta_chung": "Công tác tại Sở Nông nghiệp và Môi trường tỉnh Cần Thơ với vai trò Phó trưởng phòng, có 16 năm kinh nghiệm trong mảng Môi trường; đang tập trung vào tiếp nhận, xử lý phản ánh và giải quyết công việc liên quan người dân/đơn vị.",
+    "nganh_to": "Nông nghiệp - Tài nguyên - Môi trường",
+    "nganh_nho": "Môi trường",
+    "chu_de": [
+      "Môi trường",
+      "Kinh tế/Tài chính"
+    ],
+    "cau_hoi_truoc_mat": "Theo dõi diễn biến thiên tai, thời tiết cực đoan ảnh hưởng sản xuất nông nghiệp.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở Nông nghiệp và Môi trường",
+      "ten": "Sở Nông nghiệp và Môi trường tỉnh Cần Thơ"
+    },
+    "do_tuoi": 44,
+    "kinh_nghiem": {
+      "so_nam": 16,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN011",
+    "mo_ta_chung": "Trưởng nhóm nghiệp vụ thuộc Viện kiểm sát nhân dân tỉnh An Giang, chuyên trách lĩnh vực Xét xử với 13 năm kinh nghiệm; công việc hiện tại xoay quanh tiếp nhận, xử lý phản ánh và giải quyết công việc liên quan người dân/đơn vị.",
+    "nganh_to": "Tư pháp - Pháp luật",
+    "nganh_nho": "Xét xử",
+    "chu_de": [
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Theo dõi án lệ và các vụ việc điển hình được dư luận quan tâm.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Viện kiểm sát nhân dân",
+      "ten": "Viện kiểm sát nhân dân tỉnh An Giang"
+    },
+    "do_tuoi": 38,
+    "kinh_nghiem": {
+      "so_nam": 13,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN012",
+    "mo_ta_chung": "Nhân viên nghiệp vụ tại Bộ Giáo dục và Đào tạo, 2 năm công tác trong lĩnh vực Quản lý nhà giáo, hiện phụ trách tổng hợp báo cáo định kỳ và tham mưu chính sách.",
+    "nganh_to": "Giáo dục - Đào tạo",
+    "nganh_nho": "Quản lý nhà giáo",
+    "chu_de": [
+      "Giáo dục",
+      "Thời sự/Xã hội"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật thông tin tuyển sinh đại học, cao đẳng năm nay.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Bộ",
+      "ten": "Bộ Giáo dục và Đào tạo"
+    },
+    "do_tuoi": 27,
+    "kinh_nghiem": {
+      "so_nam": 2,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN013",
+    "mo_ta_chung": "Phó Giám đốc tại Lữ đoàn 34 đóng quân tại tỉnh Hà Nội, 28 năm công tác trong lĩnh vực Hậu cần - Kỹ thuật, hiện phụ trách xây dựng kế hoạch công tác và phối hợp liên ngành.",
+    "nganh_to": "Quân đội",
+    "nganh_nho": "Hậu cần - Kỹ thuật",
+    "chu_de": [
+      "Quốc phòng/An ninh",
+      "Thời sự/Xã hội"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật chính sách hậu phương quân đội và chế độ đãi ngộ quân nhân.",
+    "to_chuc": {
+      "cap": "Đơn vị",
+      "loai": "Lữ đoàn/Sư đoàn",
+      "ten": "Lữ đoàn 34 đóng quân tại tỉnh Hà Nội"
+    },
+    "do_tuoi": 54,
+    "kinh_nghiem": {
+      "so_nam": 28,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN014",
+    "mo_ta_chung": "Chuyên viên tại Bộ Khoa học và Công nghệ, 8 năm công tác trong lĩnh vực Viễn thông, hiện phụ trách xây dựng kế hoạch công tác và phối hợp liên ngành.",
+    "nganh_to": "Khoa học - Công nghệ - TT&TT",
+    "nganh_nho": "Viễn thông",
+    "chu_de": [
+      "Khoa học/Công nghệ"
+    ],
+    "cau_hoi_truoc_mat": "Theo dõi tiến độ triển khai đề án chuyển đổi số của địa phương/đơn vị.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Bộ",
+      "ten": "Bộ Khoa học và Công nghệ"
+    },
+    "do_tuoi": 36,
+    "kinh_nghiem": {
+      "so_nam": 8,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN015",
+    "mo_ta_chung": "Cán bộ tại Bộ Tài chính, 6 năm công tác trong lĩnh vực Hải quan, hiện phụ trách xây dựng kế hoạch công tác và phối hợp liên ngành.",
+    "nganh_to": "Tài chính - Ngân sách",
+    "nganh_nho": "Hải quan",
+    "chu_de": [
+      "Kinh tế/Tài chính",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật quy định mới về định mức phân bổ ngân sách và chi thường xuyên.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Bộ",
+      "ten": "Bộ Tài chính"
+    },
+    "do_tuoi": 33,
+    "kinh_nghiem": {
+      "so_nam": 6,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN016",
+    "mo_ta_chung": "Chuyên viên tại UBND xã Hòa Trí, tỉnh Đồng Nai, 2 năm công tác trong lĩnh vực Nội vụ, hiện phụ trách tiếp nhận, xử lý phản ánh và giải quyết công việc liên quan người dân/đơn vị.",
+    "nganh_to": "Công chức hành chính nhà nước",
+    "nganh_nho": "Nội vụ",
+    "chu_de": [
+      "Thời sự/Xã hội",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật quy trình một cửa liên thông và chuyển đổi số thủ tục hành chính.",
+    "to_chuc": {
+      "cap": "Xã",
+      "loai": "UBND xã",
+      "ten": "UBND xã Hòa Trí, tỉnh Đồng Nai"
+    },
+    "do_tuoi": 28,
+    "kinh_nghiem": {
+      "so_nam": 2,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN017",
+    "mo_ta_chung": "Trưởng nhóm nghiệp vụ tại Bộ Tư lệnh Quân khu 7, 11 năm công tác trong lĩnh vực Không quân, hiện phụ trách theo dõi, đôn đốc thực hiện các nhiệm vụ được giao trên địa bàn.",
+    "nganh_to": "Quân đội",
+    "nganh_nho": "Không quân",
+    "chu_de": [
+      "Quốc phòng/An ninh",
+      "Thời sự/Xã hội"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật kế hoạch hợp tác quốc phòng song phương trong năm.",
+    "to_chuc": {
+      "cap": "Quân khu",
+      "loai": "Bộ Tư lệnh",
+      "ten": "Bộ Tư lệnh Quân khu 7"
+    },
+    "do_tuoi": 37,
+    "kinh_nghiem": {
+      "so_nam": 11,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN018",
+    "mo_ta_chung": "Chuyên viên chính thuộc Công an tỉnh Đồng Nai, chuyên trách lĩnh vực An ninh với 12 năm kinh nghiệm; công việc hiện tại xoay quanh xây dựng kế hoạch công tác và phối hợp liên ngành.",
+    "nganh_to": "Công an / Cảnh sát",
+    "nganh_nho": "An ninh",
+    "chu_de": [
+      "Quốc phòng/An ninh",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật thủ đoạn tội phạm công nghệ cao, lừa đảo qua mạng để cảnh báo người dân.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Công an tỉnh",
+      "ten": "Công an tỉnh Đồng Nai"
+    },
+    "do_tuoi": 38,
+    "kinh_nghiem": {
+      "so_nam": 12,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN019",
+    "mo_ta_chung": "Phó trưởng phòng tại Bệnh viện Đa khoa tỉnh Hải Phòng, 16 năm công tác trong lĩnh vực Bảo hiểm y tế, hiện phụ trách theo dõi, đôn đốc thực hiện các nhiệm vụ được giao trên địa bàn.",
+    "nganh_to": "Y tế",
+    "nganh_nho": "Bảo hiểm y tế",
+    "chu_de": [
+      "Sức khỏe/Đời sống",
+      "Thời sự/Xã hội"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật chính sách bảo hiểm y tế và mức hưởng mới.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Bệnh viện",
+      "ten": "Bệnh viện Đa khoa tỉnh Hải Phòng"
+    },
+    "do_tuoi": 43,
+    "kinh_nghiem": {
+      "so_nam": 16,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN020",
+    "mo_ta_chung": "Chuyên viên cao cấp thuộc Cục Thuế tỉnh Điện Biên, chuyên trách lĩnh vực Thuế với 22 năm kinh nghiệm; công việc hiện tại xoay quanh xây dựng kế hoạch công tác và phối hợp liên ngành.",
+    "nganh_to": "Tài chính - Ngân sách",
+    "nganh_nho": "Thuế",
+    "chu_de": [
+      "Kinh tế/Tài chính",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật quy trình kê khai, quyết toán thuế điện tử.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Cục Thuế",
+      "ten": "Cục Thuế tỉnh Điện Biên"
+    },
+    "do_tuoi": 45,
+    "kinh_nghiem": {
+      "so_nam": 22,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN021",
+    "mo_ta_chung": "Phó Giám đốc tại Cục Thuế tỉnh Thanh Hóa, 20 năm công tác trong lĩnh vực Kho bạc Nhà nước, hiện phụ trách tổng hợp báo cáo định kỳ và tham mưu chính sách.",
+    "nganh_to": "Tài chính - Ngân sách",
+    "nganh_nho": "Kho bạc Nhà nước",
+    "chu_de": [
+      "Kinh tế/Tài chính",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật quy trình kê khai, quyết toán thuế điện tử.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Cục Thuế",
+      "ten": "Cục Thuế tỉnh Thanh Hóa"
+    },
+    "do_tuoi": 45,
+    "kinh_nghiem": {
+      "so_nam": 20,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN022",
+    "mo_ta_chung": "Nhân viên nghiệp vụ thuộc Bộ Quốc phòng, chuyên trách lĩnh vực Biên phòng với 8 năm kinh nghiệm; công việc hiện tại xoay quanh xây dựng kế hoạch công tác và phối hợp liên ngành.",
+    "nganh_to": "Quân đội",
+    "nganh_nho": "Biên phòng",
+    "chu_de": [
+      "Quốc phòng/An ninh",
+      "Thời sự/Xã hội"
+    ],
+    "cau_hoi_truoc_mat": "Nắm tình hình an ninh biên giới, chủ quyền biển đảo liên quan khu vực đóng quân.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Bộ",
+      "ten": "Bộ Quốc phòng"
+    },
+    "do_tuoi": 35,
+    "kinh_nghiem": {
+      "so_nam": 8,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN023",
+    "mo_ta_chung": "Công tác tại Ngân hàng Nhà nước Việt Nam với vai trò Chuyên viên, có 5 năm kinh nghiệm trong mảng Chính sách tiền tệ; đang tập trung vào tổng hợp báo cáo định kỳ và tham mưu chính sách.",
+    "nganh_to": "Ngân hàng - Tiền tệ",
+    "nganh_nho": "Chính sách tiền tệ",
+    "chu_de": [
+      "Kinh tế/Tài chính"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật biến động tỷ giá và chính sách quản lý ngoại hối.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Ngân hàng Nhà nước",
+      "ten": "Ngân hàng Nhà nước Việt Nam"
+    },
+    "do_tuoi": 32,
+    "kinh_nghiem": {
+      "so_nam": 5,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN024",
+    "mo_ta_chung": "Chuyên viên chính tại Sở Nông nghiệp và Môi trường tỉnh Quảng Ninh, 18 năm công tác trong lĩnh vực Tài nguyên nước - Khí tượng, hiện phụ trách theo dõi, đôn đốc thực hiện các nhiệm vụ được giao trên địa bàn.",
+    "nganh_to": "Nông nghiệp - Tài nguyên - Môi trường",
+    "nganh_nho": "Tài nguyên nước - Khí tượng",
+    "chu_de": [
+      "Môi trường",
+      "Kinh tế/Tài chính"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật quy định mới về quản lý, cấp phép sử dụng đất đai.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở Nông nghiệp và Môi trường",
+      "ten": "Sở Nông nghiệp và Môi trường tỉnh Quảng Ninh"
+    },
+    "do_tuoi": 44,
+    "kinh_nghiem": {
+      "so_nam": 18,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN025",
+    "mo_ta_chung": "Công tác tại Ngân hàng Nhà nước Việt Nam với vai trò Cán bộ, có 3 năm kinh nghiệm trong mảng Quản lý ngoại hối; đang tập trung vào tổng hợp báo cáo định kỳ và tham mưu chính sách.",
+    "nganh_to": "Ngân hàng - Tiền tệ",
+    "nganh_nho": "Quản lý ngoại hối",
+    "chu_de": [
+      "Kinh tế/Tài chính"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật biến động tỷ giá và chính sách quản lý ngoại hối.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Ngân hàng Nhà nước",
+      "ten": "Ngân hàng Nhà nước Việt Nam"
+    },
+    "do_tuoi": 27,
+    "kinh_nghiem": {
+      "so_nam": 3,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN026",
+    "mo_ta_chung": "Cán bộ thuộc Cục Chiến lược - Bộ Quốc phòng, chuyên trách lĩnh vực Công nghiệp quốc phòng với 3 năm kinh nghiệm; công việc hiện tại xoay quanh tổng hợp báo cáo định kỳ và tham mưu chính sách.",
+    "nganh_to": "An ninh - Quốc phòng (hoạch định chính sách)",
+    "nganh_nho": "Công nghiệp quốc phòng",
+    "chu_de": [
+      "Quốc phòng/An ninh",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật chủ trương, chiến lược quốc phòng mới được ban hành.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Cục/Vụ",
+      "ten": "Cục Chiến lược - Bộ Quốc phòng"
+    },
+    "do_tuoi": 31,
+    "kinh_nghiem": {
+      "so_nam": 3,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN027",
+    "mo_ta_chung": "Trưởng nhóm nghiệp vụ thuộc Bộ Ngoại giao, chuyên trách lĩnh vực Kinh tế đối ngoại với 16 năm kinh nghiệm; công việc hiện tại xoay quanh tổng hợp báo cáo định kỳ và tham mưu chính sách.",
+    "nganh_to": "Ngoại giao",
+    "nganh_nho": "Kinh tế đối ngoại",
+    "chu_de": [
+      "Ngoại giao/Quan hệ quốc tế",
+      "Kinh tế/Tài chính"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật diễn biến quan hệ song phương với các đối tác chiến lược.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Bộ",
+      "ten": "Bộ Ngoại giao"
+    },
+    "do_tuoi": 42,
+    "kinh_nghiem": {
+      "so_nam": 16,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN028",
+    "mo_ta_chung": "Nhân viên nghiệp vụ thuộc Sở Tài chính tỉnh Đắk Lắk, chuyên trách lĩnh vực Ngân sách nhà nước với 1 năm kinh nghiệm; công việc hiện tại xoay quanh xây dựng kế hoạch công tác và phối hợp liên ngành.",
+    "nganh_to": "Tài chính - Ngân sách",
+    "nganh_nho": "Ngân sách nhà nước",
+    "chu_de": [
+      "Kinh tế/Tài chính",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật quy định mới về định mức phân bổ ngân sách và chi thường xuyên.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở",
+      "ten": "Sở Tài chính tỉnh Đắk Lắk"
+    },
+    "do_tuoi": 28,
+    "kinh_nghiem": {
+      "so_nam": 1,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN029",
+    "mo_ta_chung": "Nhân viên nghiệp vụ tại Sở Ngoại vụ tỉnh Sơn La, 7 năm công tác trong lĩnh vực Công tác người Việt Nam ở nước ngoài, hiện phụ trách tổng hợp báo cáo định kỳ và tham mưu chính sách.",
+    "nganh_to": "Ngoại giao",
+    "nganh_nho": "Công tác người Việt Nam ở nước ngoài",
+    "chu_de": [
+      "Ngoại giao/Quan hệ quốc tế",
+      "Kinh tế/Tài chính"
+    ],
+    "cau_hoi_truoc_mat": "Theo dõi lịch trình các hội nghị, diễn đàn đa phương sắp diễn ra.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở Ngoại vụ",
+      "ten": "Sở Ngoại vụ tỉnh Sơn La"
+    },
+    "do_tuoi": 29,
+    "kinh_nghiem": {
+      "so_nam": 7,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN030",
+    "mo_ta_chung": "Công tác tại UBND xã Đồng Hỷ, tỉnh Đắk Lắk với vai trò Chuyên viên chính, có 15 năm kinh nghiệm trong mảng Quản lý công vụ; đang tập trung vào tiếp nhận, xử lý phản ánh và giải quyết công việc liên quan người dân/đơn vị.",
+    "nganh_to": "Công chức hành chính nhà nước",
+    "nganh_nho": "Quản lý công vụ",
+    "chu_de": [
+      "Thời sự/Xã hội",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật quy trình một cửa liên thông và chuyển đổi số thủ tục hành chính.",
+    "to_chuc": {
+      "cap": "Xã",
+      "loai": "UBND xã",
+      "ten": "UBND xã Đồng Hỷ, tỉnh Đắk Lắk"
+    },
+    "do_tuoi": 43,
+    "kinh_nghiem": {
+      "so_nam": 15,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN031",
+    "mo_ta_chung": "Trưởng phòng thuộc Sở Ngoại vụ tỉnh Hà Nội, chuyên trách lĩnh vực Công tác người Việt Nam ở nước ngoài với 21 năm kinh nghiệm; công việc hiện tại xoay quanh tiếp nhận, xử lý phản ánh và giải quyết công việc liên quan người dân/đơn vị.",
+    "nganh_to": "Ngoại giao",
+    "nganh_nho": "Công tác người Việt Nam ở nước ngoài",
+    "chu_de": [
+      "Ngoại giao/Quan hệ quốc tế",
+      "Kinh tế/Tài chính"
+    ],
+    "cau_hoi_truoc_mat": "Theo dõi lịch trình các hội nghị, diễn đàn đa phương sắp diễn ra.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở Ngoại vụ",
+      "ten": "Sở Ngoại vụ tỉnh Hà Nội"
+    },
+    "do_tuoi": 43,
+    "kinh_nghiem": {
+      "so_nam": 21,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN032",
+    "mo_ta_chung": "Công tác tại Bộ Y tế với vai trò Trưởng nhóm nghiệp vụ, có 16 năm kinh nghiệm trong mảng Khám chữa bệnh; đang tập trung vào tổng hợp báo cáo định kỳ và tham mưu chính sách.",
+    "nganh_to": "Y tế",
+    "nganh_nho": "Khám chữa bệnh",
+    "chu_de": [
+      "Sức khỏe/Đời sống",
+      "Thời sự/Xã hội"
+    ],
+    "cau_hoi_truoc_mat": "Theo dõi tình hình nhân lực và cơ sở vật chất y tế tuyến cơ sở.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Bộ",
+      "ten": "Bộ Y tế"
+    },
+    "do_tuoi": 41,
+    "kinh_nghiem": {
+      "so_nam": 16,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN033",
+    "mo_ta_chung": "Công tác tại Sở Nội vụ tỉnh Lai Châu với vai trò Cán bộ, có 3 năm kinh nghiệm trong mảng Cải cách hành chính; đang tập trung vào tổng hợp báo cáo định kỳ và tham mưu chính sách.",
+    "nganh_to": "Công chức hành chính nhà nước",
+    "nganh_nho": "Cải cách hành chính",
+    "chu_de": [
+      "Thời sự/Xã hội",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật quy định mới về sắp xếp tổ chức bộ máy và tinh giản biên chế.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở",
+      "ten": "Sở Nội vụ tỉnh Lai Châu"
+    },
+    "do_tuoi": 30,
+    "kinh_nghiem": {
+      "so_nam": 3,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN034",
+    "mo_ta_chung": "Công tác tại Bộ Nội vụ với vai trò Phó trưởng phòng, có 11 năm kinh nghiệm trong mảng Quản lý công vụ; đang tập trung vào xây dựng kế hoạch công tác và phối hợp liên ngành.",
+    "nganh_to": "Công chức hành chính nhà nước",
+    "nganh_nho": "Quản lý công vụ",
+    "chu_de": [
+      "Thời sự/Xã hội",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Theo dõi tiến độ triển khai mô hình chính quyền địa phương 2 cấp.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Bộ",
+      "ten": "Bộ Nội vụ"
+    },
+    "do_tuoi": 38,
+    "kinh_nghiem": {
+      "so_nam": 11,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN035",
+    "mo_ta_chung": "Công tác tại Sở Khoa học và Công nghệ tỉnh Quảng Ninh với vai trò Phó Giám đốc, có 22 năm kinh nghiệm trong mảng An toàn thông tin; đang tập trung vào xây dựng kế hoạch công tác và phối hợp liên ngành.",
+    "nganh_to": "Khoa học - Công nghệ - TT&TT",
+    "nganh_nho": "An toàn thông tin",
+    "chu_de": [
+      "Khoa học/Công nghệ"
+    ],
+    "cau_hoi_truoc_mat": "Nắm chính sách hỗ trợ doanh nghiệp khởi nghiệp đổi mới sáng tạo.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở KH&CN",
+      "ten": "Sở Khoa học và Công nghệ tỉnh Quảng Ninh"
+    },
+    "do_tuoi": 50,
+    "kinh_nghiem": {
+      "so_nam": 22,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN036",
+    "mo_ta_chung": "Cán bộ thuộc Lữ đoàn 77 đóng quân tại tỉnh Lào Cai, chuyên trách lĩnh vực Biên phòng với 5 năm kinh nghiệm; công việc hiện tại xoay quanh tiếp nhận, xử lý phản ánh và giải quyết công việc liên quan người dân/đơn vị.",
+    "nganh_to": "Quân đội",
+    "nganh_nho": "Biên phòng",
+    "chu_de": [
+      "Quốc phòng/An ninh",
+      "Thời sự/Xã hội"
+    ],
+    "cau_hoi_truoc_mat": "Nắm tình hình an ninh biên giới, chủ quyền biển đảo liên quan khu vực đóng quân.",
+    "to_chuc": {
+      "cap": "Đơn vị",
+      "loai": "Lữ đoàn/Sư đoàn",
+      "ten": "Lữ đoàn 77 đóng quân tại tỉnh Lào Cai"
+    },
+    "do_tuoi": 30,
+    "kinh_nghiem": {
+      "so_nam": 5,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN037",
+    "mo_ta_chung": "Trưởng phòng thuộc Sở Nông nghiệp và Môi trường tỉnh Huế, chuyên trách lĩnh vực Tài nguyên nước - Khí tượng với 26 năm kinh nghiệm; công việc hiện tại xoay quanh xây dựng kế hoạch công tác và phối hợp liên ngành.",
+    "nganh_to": "Nông nghiệp - Tài nguyên - Môi trường",
+    "nganh_nho": "Tài nguyên nước - Khí tượng",
+    "chu_de": [
+      "Môi trường",
+      "Kinh tế/Tài chính"
+    ],
+    "cau_hoi_truoc_mat": "Nắm tình hình xuất khẩu nông sản và các rào cản kỹ thuật thị trường.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở Nông nghiệp và Môi trường",
+      "ten": "Sở Nông nghiệp và Môi trường tỉnh Huế"
+    },
+    "do_tuoi": 53,
+    "kinh_nghiem": {
+      "so_nam": 26,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN038",
+    "mo_ta_chung": "Chuyên viên chính thuộc Bộ Nội vụ, chuyên trách lĩnh vực Nội vụ với 18 năm kinh nghiệm; công việc hiện tại xoay quanh theo dõi, đôn đốc thực hiện các nhiệm vụ được giao trên địa bàn.",
+    "nganh_to": "Công chức hành chính nhà nước",
+    "nganh_nho": "Nội vụ",
+    "chu_de": [
+      "Thời sự/Xã hội",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật quy định mới về sắp xếp tổ chức bộ máy và tinh giản biên chế.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Bộ",
+      "ten": "Bộ Nội vụ"
+    },
+    "do_tuoi": 41,
+    "kinh_nghiem": {
+      "so_nam": 18,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN039",
+    "mo_ta_chung": "Trưởng phòng tại Học viện Quốc phòng, 22 năm công tác trong lĩnh vực Chiến lược quốc phòng, hiện phụ trách theo dõi, đôn đốc thực hiện các nhiệm vụ được giao trên địa bàn.",
+    "nganh_to": "An ninh - Quốc phòng (hoạch định chính sách)",
+    "nganh_nho": "Chiến lược quốc phòng",
+    "chu_de": [
+      "Quốc phòng/An ninh",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật chủ trương, chiến lược quốc phòng mới được ban hành.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Học viện",
+      "ten": "Học viện Quốc phòng"
+    },
+    "do_tuoi": 50,
+    "kinh_nghiem": {
+      "so_nam": 22,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN040",
+    "mo_ta_chung": "Công tác tại Sở Nông nghiệp và Môi trường tỉnh Đắk Lắk với vai trò Phó Giám đốc, có 24 năm kinh nghiệm trong mảng Môi trường; đang tập trung vào theo dõi, đôn đốc thực hiện các nhiệm vụ được giao trên địa bàn.",
+    "nganh_to": "Nông nghiệp - Tài nguyên - Môi trường",
+    "nganh_nho": "Môi trường",
+    "chu_de": [
+      "Môi trường",
+      "Kinh tế/Tài chính"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật quy định mới về quản lý, cấp phép sử dụng đất đai.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở Nông nghiệp và Môi trường",
+      "ten": "Sở Nông nghiệp và Môi trường tỉnh Đắk Lắk"
+    },
+    "do_tuoi": 51,
+    "kinh_nghiem": {
+      "so_nam": 24,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN041",
+    "mo_ta_chung": "Trưởng nhóm nghiệp vụ thuộc Bộ Ngoại giao, chuyên trách lĩnh vực Song phương với 12 năm kinh nghiệm; công việc hiện tại xoay quanh tổng hợp báo cáo định kỳ và tham mưu chính sách.",
+    "nganh_to": "Ngoại giao",
+    "nganh_nho": "Song phương",
+    "chu_de": [
+      "Ngoại giao/Quan hệ quốc tế",
+      "Kinh tế/Tài chính"
+    ],
+    "cau_hoi_truoc_mat": "Theo dõi lịch trình các hội nghị, diễn đàn đa phương sắp diễn ra.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Bộ",
+      "ten": "Bộ Ngoại giao"
+    },
+    "do_tuoi": 34,
+    "kinh_nghiem": {
+      "so_nam": 12,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN042",
+    "mo_ta_chung": "Chuyên viên chính tại Công an xã Ea Ô, tỉnh Tây Ninh, 15 năm công tác trong lĩnh vực Phòng cháy chữa cháy, hiện phụ trách tổng hợp báo cáo định kỳ và tham mưu chính sách.",
+    "nganh_to": "Công an / Cảnh sát",
+    "nganh_nho": "Phòng cháy chữa cháy",
+    "chu_de": [
+      "Quốc phòng/An ninh",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Theo dõi tình hình trật tự an toàn giao thông và tai nạn giao thông trên địa bàn.",
+    "to_chuc": {
+      "cap": "Xã",
+      "loai": "Công an xã",
+      "ten": "Công an xã Ea Ô, tỉnh Tây Ninh"
+    },
+    "do_tuoi": 41,
+    "kinh_nghiem": {
+      "so_nam": 15,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN043",
+    "mo_ta_chung": "Công tác tại Trường THPT Lý Thường Kiệt, tỉnh Nghệ An với vai trò Phó trưởng phòng, có 19 năm kinh nghiệm trong mảng Giáo dục đại học; đang tập trung vào xây dựng kế hoạch công tác và phối hợp liên ngành.",
+    "nganh_to": "Giáo dục - Đào tạo",
+    "nganh_nho": "Giáo dục đại học",
+    "chu_de": [
+      "Giáo dục",
+      "Thời sự/Xã hội"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật lịch thi, quy chế tuyển sinh và kỳ thi tốt nghiệp thpt.",
+    "to_chuc": {
+      "cap": "Trường",
+      "loai": "Trường học",
+      "ten": "Trường THPT Lý Thường Kiệt, tỉnh Nghệ An"
+    },
+    "do_tuoi": 42,
+    "kinh_nghiem": {
+      "so_nam": 19,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN044",
+    "mo_ta_chung": "Chuyên viên cao cấp thuộc Sở Thông tin và Truyền thông tỉnh Khánh Hòa, chuyên trách lĩnh vực Viễn thông với 20 năm kinh nghiệm; công việc hiện tại xoay quanh tổng hợp báo cáo định kỳ và tham mưu chính sách.",
+    "nganh_to": "Khoa học - Công nghệ - TT&TT",
+    "nganh_nho": "Viễn thông",
+    "chu_de": [
+      "Khoa học/Công nghệ"
+    ],
+    "cau_hoi_truoc_mat": "Theo dõi tiến độ triển khai đề án chuyển đổi số của địa phương/đơn vị.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở TT&TT",
+      "ten": "Sở Thông tin và Truyền thông tỉnh Khánh Hòa"
+    },
+    "do_tuoi": 48,
+    "kinh_nghiem": {
+      "so_nam": 20,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN045",
+    "mo_ta_chung": "Nhân viên nghiệp vụ tại Bộ Chỉ huy Quân sự tỉnh Ninh Bình, 5 năm công tác trong lĩnh vực Hậu cần - Kỹ thuật, hiện phụ trách xây dựng kế hoạch công tác và phối hợp liên ngành.",
+    "nganh_to": "Quân đội",
+    "nganh_nho": "Hậu cần - Kỹ thuật",
+    "chu_de": [
+      "Quốc phòng/An ninh",
+      "Thời sự/Xã hội"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật kế hoạch hợp tác quốc phòng song phương trong năm.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Bộ Chỉ huy quân sự",
+      "ten": "Bộ Chỉ huy Quân sự tỉnh Ninh Bình"
+    },
+    "do_tuoi": 28,
+    "kinh_nghiem": {
+      "so_nam": 5,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN046",
+    "mo_ta_chung": "Chuyên viên cao cấp thuộc Học viện Quốc phòng, chuyên trách lĩnh vực An ninh mạng quốc gia với 27 năm kinh nghiệm; công việc hiện tại xoay quanh tổng hợp báo cáo định kỳ và tham mưu chính sách.",
+    "nganh_to": "An ninh - Quốc phòng (hoạch định chính sách)",
+    "nganh_nho": "An ninh mạng quốc gia",
+    "chu_de": [
+      "Quốc phòng/An ninh",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Theo dõi các báo cáo, phân tích tình hình an ninh khu vực và thế giới liên quan lĩnh vực phụ trách.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Học viện",
+      "ten": "Học viện Quốc phòng"
+    },
+    "do_tuoi": 52,
+    "kinh_nghiem": {
+      "so_nam": 27,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN047",
+    "mo_ta_chung": "Chuyên viên cao cấp thuộc Tòa án nhân dân tỉnh Thanh Hóa, chuyên trách lĩnh vực Xây dựng pháp luật với 28 năm kinh nghiệm; công việc hiện tại xoay quanh xây dựng kế hoạch công tác và phối hợp liên ngành.",
+    "nganh_to": "Tư pháp - Pháp luật",
+    "nganh_nho": "Xây dựng pháp luật",
+    "chu_de": [
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Nắm tiến độ thi hành án và các vướng mắc phát sinh trong thực tiễn.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Tòa án nhân dân",
+      "ten": "Tòa án nhân dân tỉnh Thanh Hóa"
+    },
+    "do_tuoi": 50,
+    "kinh_nghiem": {
+      "so_nam": 28,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN048",
+    "mo_ta_chung": "Chuyên viên cao cấp thuộc Ngân hàng Nhà nước Việt Nam, chuyên trách lĩnh vực Giám sát ngân hàng với 23 năm kinh nghiệm; công việc hiện tại xoay quanh tiếp nhận, xử lý phản ánh và giải quyết công việc liên quan người dân/đơn vị.",
+    "nganh_to": "Ngân hàng - Tiền tệ",
+    "nganh_nho": "Giám sát ngân hàng",
+    "chu_de": [
+      "Kinh tế/Tài chính"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật biến động tỷ giá và chính sách quản lý ngoại hối.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Ngân hàng Nhà nước",
+      "ten": "Ngân hàng Nhà nước Việt Nam"
+    },
+    "do_tuoi": 51,
+    "kinh_nghiem": {
+      "so_nam": 23,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN049",
+    "mo_ta_chung": "Công tác tại Bộ Tư pháp với vai trò Chuyên viên cao cấp, có 28 năm kinh nghiệm trong mảng Xét xử; đang tập trung vào xây dựng kế hoạch công tác và phối hợp liên ngành.",
+    "nganh_to": "Tư pháp - Pháp luật",
+    "nganh_nho": "Xét xử",
+    "chu_de": [
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật các luật, nghị định mới có hiệu lực liên quan lĩnh vực phụ trách.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Bộ",
+      "ten": "Bộ Tư pháp"
+    },
+    "do_tuoi": 52,
+    "kinh_nghiem": {
+      "so_nam": 28,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN050",
+    "mo_ta_chung": "Trưởng nhóm nghiệp vụ thuộc Bộ Giáo dục và Đào tạo, chuyên trách lĩnh vực Giáo dục đại học với 15 năm kinh nghiệm; công việc hiện tại xoay quanh theo dõi, đôn đốc thực hiện các nhiệm vụ được giao trên địa bàn.",
+    "nganh_to": "Giáo dục - Đào tạo",
+    "nganh_nho": "Giáo dục đại học",
+    "chu_de": [
+      "Giáo dục",
+      "Thời sự/Xã hội"
+    ],
+    "cau_hoi_truoc_mat": "Theo dõi chính sách đổi mới chương trình giáo dục phổ thông.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Bộ",
+      "ten": "Bộ Giáo dục và Đào tạo"
+    },
+    "do_tuoi": 40,
+    "kinh_nghiem": {
+      "so_nam": 15,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN051",
+    "mo_ta_chung": "Trưởng phòng thuộc Học viện Quốc phòng, chuyên trách lĩnh vực Công nghiệp quốc phòng với 27 năm kinh nghiệm; công việc hiện tại xoay quanh tổng hợp báo cáo định kỳ và tham mưu chính sách.",
+    "nganh_to": "An ninh - Quốc phòng (hoạch định chính sách)",
+    "nganh_nho": "Công nghiệp quốc phòng",
+    "chu_de": [
+      "Quốc phòng/An ninh",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Theo dõi diễn biến an ninh mạng, các sự cố tấn công mạng quy mô lớn gần đây.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Học viện",
+      "ten": "Học viện Quốc phòng"
+    },
+    "do_tuoi": 50,
+    "kinh_nghiem": {
+      "so_nam": 27,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN052",
+    "mo_ta_chung": "Trưởng nhóm nghiệp vụ thuộc Ngân hàng Nhà nước Việt Nam, chuyên trách lĩnh vực Thanh toán với 17 năm kinh nghiệm; công việc hiện tại xoay quanh tiếp nhận, xử lý phản ánh và giải quyết công việc liên quan người dân/đơn vị.",
+    "nganh_to": "Ngân hàng - Tiền tệ",
+    "nganh_nho": "Thanh toán",
+    "chu_de": [
+      "Kinh tế/Tài chính"
+    ],
+    "cau_hoi_truoc_mat": "Theo dõi lộ trình triển khai các quy định mới về thanh toán không dùng tiền mặt.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Ngân hàng Nhà nước",
+      "ten": "Ngân hàng Nhà nước Việt Nam"
+    },
+    "do_tuoi": 40,
+    "kinh_nghiem": {
+      "so_nam": 17,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN053",
+    "mo_ta_chung": "Công tác tại Sở Nông nghiệp và Môi trường tỉnh Đồng Nai với vai trò Trưởng nhóm nghiệp vụ, có 15 năm kinh nghiệm trong mảng Tài nguyên nước - Khí tượng; đang tập trung vào theo dõi, đôn đốc thực hiện các nhiệm vụ được giao trên địa bàn.",
+    "nganh_to": "Nông nghiệp - Tài nguyên - Môi trường",
+    "nganh_nho": "Tài nguyên nước - Khí tượng",
+    "chu_de": [
+      "Môi trường",
+      "Kinh tế/Tài chính"
+    ],
+    "cau_hoi_truoc_mat": "Theo dõi diễn biến thiên tai, thời tiết cực đoan ảnh hưởng sản xuất nông nghiệp.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở Nông nghiệp và Môi trường",
+      "ten": "Sở Nông nghiệp và Môi trường tỉnh Đồng Nai"
+    },
+    "do_tuoi": 37,
+    "kinh_nghiem": {
+      "so_nam": 15,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN054",
+    "mo_ta_chung": "Phó trưởng phòng thuộc Công an xã Hoàng Văn Thụ, tỉnh Đồng Tháp, chuyên trách lĩnh vực Cảnh sát điều tra với 13 năm kinh nghiệm; công việc hiện tại xoay quanh tiếp nhận, xử lý phản ánh và giải quyết công việc liên quan người dân/đơn vị.",
+    "nganh_to": "Công an / Cảnh sát",
+    "nganh_nho": "Cảnh sát điều tra",
+    "chu_de": [
+      "Quốc phòng/An ninh",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Nắm diễn biến an ninh trật tự dịp cao điểm, lễ hội trên địa bàn quản lý.",
+    "to_chuc": {
+      "cap": "Xã",
+      "loai": "Công an xã",
+      "ten": "Công an xã Hoàng Văn Thụ, tỉnh Đồng Tháp"
+    },
+    "do_tuoi": 40,
+    "kinh_nghiem": {
+      "so_nam": 13,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN055",
+    "mo_ta_chung": "Cán bộ thuộc Bộ Công an, chuyên trách lĩnh vực Quản lý xuất nhập cảnh với 6 năm kinh nghiệm; công việc hiện tại xoay quanh tổng hợp báo cáo định kỳ và tham mưu chính sách.",
+    "nganh_to": "Công an / Cảnh sát",
+    "nganh_nho": "Quản lý xuất nhập cảnh",
+    "chu_de": [
+      "Quốc phòng/An ninh",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật thủ đoạn tội phạm công nghệ cao, lừa đảo qua mạng để cảnh báo người dân.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Bộ",
+      "ten": "Bộ Công an"
+    },
+    "do_tuoi": 33,
+    "kinh_nghiem": {
+      "so_nam": 6,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN056",
+    "mo_ta_chung": "Phó Giám đốc tại Công an tỉnh Hải Phòng, 24 năm công tác trong lĩnh vực Cảnh sát điều tra, hiện phụ trách theo dõi, đôn đốc thực hiện các nhiệm vụ được giao trên địa bàn.",
+    "nganh_to": "Công an / Cảnh sát",
+    "nganh_nho": "Cảnh sát điều tra",
+    "chu_de": [
+      "Quốc phòng/An ninh",
+      "Chính trị/Pháp luật"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật thủ đoạn tội phạm công nghệ cao, lừa đảo qua mạng để cảnh báo người dân.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Công an tỉnh",
+      "ten": "Công an tỉnh Hải Phòng"
+    },
+    "do_tuoi": 52,
+    "kinh_nghiem": {
+      "so_nam": 24,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN057",
+    "mo_ta_chung": "Công tác tại Sở Y tế tỉnh Sơn La với vai trò Chuyên viên cao cấp, có 29 năm kinh nghiệm trong mảng Khám chữa bệnh; đang tập trung vào tiếp nhận, xử lý phản ánh và giải quyết công việc liên quan người dân/đơn vị.",
+    "nganh_to": "Y tế",
+    "nganh_nho": "Khám chữa bệnh",
+    "chu_de": [
+      "Sức khỏe/Đời sống",
+      "Thời sự/Xã hội"
+    ],
+    "cau_hoi_truoc_mat": "Nắm quy định mới về quản lý dược phẩm, trang thiết bị y tế.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở Y tế",
+      "ten": "Sở Y tế tỉnh Sơn La"
+    },
+    "do_tuoi": 52,
+    "kinh_nghiem": {
+      "so_nam": 29,
+      "cap_bac": "Chuyên viên cao cấp / Lãnh đạo"
+    }
+  },
+  {
+    "id": "NN058",
+    "mo_ta_chung": "Cán bộ thuộc Sở Giáo dục và Đào tạo tỉnh Khánh Hòa, chuyên trách lĩnh vực Giáo dục nghề nghiệp với 2 năm kinh nghiệm; công việc hiện tại xoay quanh tiếp nhận, xử lý phản ánh và giải quyết công việc liên quan người dân/đơn vị.",
+    "nganh_to": "Giáo dục - Đào tạo",
+    "nganh_nho": "Giáo dục nghề nghiệp",
+    "chu_de": [
+      "Giáo dục",
+      "Thời sự/Xã hội"
+    ],
+    "cau_hoi_truoc_mat": "Theo dõi chính sách đổi mới chương trình giáo dục phổ thông.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở GD&ĐT",
+      "ten": "Sở Giáo dục và Đào tạo tỉnh Khánh Hòa"
+    },
+    "do_tuoi": 27,
+    "kinh_nghiem": {
+      "so_nam": 2,
+      "cap_bac": "Chuyên viên"
+    }
+  },
+  {
+    "id": "NN059",
+    "mo_ta_chung": "Chuyên viên chính thuộc Ngân hàng Nhà nước Việt Nam, chuyên trách lĩnh vực Giám sát ngân hàng với 12 năm kinh nghiệm; công việc hiện tại xoay quanh theo dõi, đôn đốc thực hiện các nhiệm vụ được giao trên địa bàn.",
+    "nganh_to": "Ngân hàng - Tiền tệ",
+    "nganh_nho": "Giám sát ngân hàng",
+    "chu_de": [
+      "Kinh tế/Tài chính"
+    ],
+    "cau_hoi_truoc_mat": "Nắm tình hình nợ xấu và các biện pháp giám sát an toàn hệ thống ngân hàng.",
+    "to_chuc": {
+      "cap": "Trung ương",
+      "loai": "Ngân hàng Nhà nước",
+      "ten": "Ngân hàng Nhà nước Việt Nam"
+    },
+    "do_tuoi": 37,
+    "kinh_nghiem": {
+      "so_nam": 12,
+      "cap_bac": "Chuyên viên chính"
+    }
+  },
+  {
+    "id": "NN060",
+    "mo_ta_chung": "Công tác tại Sở Giáo dục và Đào tạo tỉnh Thành phố Hồ Chí Minh với vai trò Nhân viên nghiệp vụ, có 2 năm kinh nghiệm trong mảng Giáo dục phổ thông; đang tập trung vào tiếp nhận, xử lý phản ánh và giải quyết công việc liên quan người dân/đơn vị.",
+    "nganh_to": "Giáo dục - Đào tạo",
+    "nganh_nho": "Giáo dục phổ thông",
+    "chu_de": [
+      "Giáo dục",
+      "Thời sự/Xã hội"
+    ],
+    "cau_hoi_truoc_mat": "Cập nhật lịch thi, quy chế tuyển sinh và kỳ thi tốt nghiệp thpt.",
+    "to_chuc": {
+      "cap": "Tỉnh",
+      "loai": "Sở GD&ĐT",
+      "ten": "Sở Giáo dục và Đào tạo tỉnh Thành phố Hồ Chí Minh"
+    },
+    "do_tuoi": 30,
+    "kinh_nghiem": {
+      "so_nam": 2,
+      "cap_bac": "Chuyên viên"
+    }
+  }
+]
