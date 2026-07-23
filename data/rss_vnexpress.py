@@ -26,9 +26,7 @@ HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 
 def clean_summary(raw_html):
-    # bỏ thẻ <a>...</a> (kèm chữ "Xem thêm" bên trong) trước
     text = re.sub(r"<a[^>]*>.*?</a>", "", raw_html, flags=re.DOTALL)
-    # bỏ các thẻ html còn lại như <br/>
     text = re.sub(r"<[^>]+>", "", text)
     return text.strip()
 

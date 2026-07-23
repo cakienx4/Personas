@@ -32,18 +32,25 @@ def goi_llm(prompt):
 
 
 def tao_prompt_mo_ta(profile):
-    return f'''Viet mot doan mo ta persona bang tieng Viet, dai 3-4 cau, theo dung cau truc sau:
-- Cau 1: gioi thieu vai tro cua nguoi nay (chuc danh, noi cong tac).
-- Cau 2: mo ta moi quan tam/trach nhiem chinh ho dang tap trung.
-- Cau 3: the hien kien thuc chuyen mon hoac kinh nghiem lien quan linh vuc phu trach.
-- Cau 4: dieu ho dang can nam bat/tim hieu trong cong viec hien tai.
-Thong tin de viet:
-- Chuc danh, to chuc: {profile.get("mo_ta_chung", "")}
-- Nganh: {profile.get("nganh_to", "")}  -  {profile.get("nganh_nho", "")}
-- Kinh nghiem: {profile.get("kinh_nghiem", "")}
-- Moi quan tam hien tai: {profile.get("cau_hoi_truoc_mat", "")}
-Chi tra ve doan mo ta, khong danh so cau, khong giai thich gi them.
-'''
+    prompt = f''' 
+    Viết một đoạn mô tả persona bằng tiếng Việt, dài 3–4 câu, theo đúng phong cách sau:
+Ví dụ phong cách cần theo:
+- "Nhà phát triển phần mềm là những người đang tìm cách đơn giản hóa việc tích hợp công nghệ GPRS...
+- "Một người quan tâm đến dinh dưỡng và sức khỏe..."
+- "Lisa Bock, một chuyên gia dày dạn kinh nghiệm trong lĩnh vực bảo mật CNTT với hơn 20 năm kinh nghiệm..."
+Quy tắc BẮT BUỘC:
+- Bắt đầu bằng "Một [vai trò/chức danh]..." hoặc "Một người...", KHÔNG nhắc tên riêng.
+- TUYỆT ĐỐI KHÔNG dùng đại từ nhân xưng như "tôi", "ông", "bà", "anh", "chị", "họ", "người này".
+- Cấu trúc nội dung: vai trò/chức danh - mối quan tâm hoặc trách nhiệm chính - kiến thức chuyên môn hoặc kinh nghiệm liên quan - điều cần nắm bắt/tìm hiểu trong công việc hiện tại.
+Thông tin để viết:
+- Chức danh, tổ chức: {profile["mo_ta_chung"]}
+- Ngành: {profile["nganh_to"]} - {profile["nganh_nho"]}
+- Kinh nghiệm: {profile["kinh_nghiem"]}
+- Mối quan tâm hiện tại: {profile["cau_hoi_truoc_mat"]}
+
+Chỉ trả về đoạn mô tả, không đánh số câu, không giải thích gì thêm.
+    '''
+    return prompt
 
 
 def tao_prompt_cau_hoi(profile):
@@ -84,9 +91,9 @@ if __name__ == "__main__":
 
     profiles_moi = sinh_lai_bang_llm(profiles)
 
-    with open("state_profiles.json", "w", encoding="utf-8") as f:
+    with open("state_profiles_enrich.json", "w", encoding="utf-8") as f:
         json.dump(profiles_moi, f, ensure_ascii=False, indent=2)
 
-    save_csv(profiles_moi, "state_profiles.csv")
+    save_csv(profiles_moi, "state_profiles_enrich.csv")
 
     print("Xong roi, da ghi de len state_profiles.json va state_profiles.csv")
