@@ -287,6 +287,60 @@
       "tham nhũng": 0.7,
       "cải cách hành chính": 0.6
     },
+    "Quốc phòng / An ninh": {
+      "quốc phòng": 1.0,
+      "an ninh quốc gia": 0.9,
+      "quân đội": 0.9,
+      "quân sự": 0.8,
+      "lực lượng vũ trang": 0.8,
+      "biên giới": 0.7,
+      "biển đảo": 0.8,
+      "chủ quyền": 0.8,
+      "quân khu": 0.7,
+      "diễn tập": 0.6,
+      "tập trận": 0.7,
+      "vũ khí": 0.6,
+      "khí tài": 0.6,
+      "an ninh mạng": 0.7,
+      "tình báo": 0.6,
+      "khủng bố": 0.7,
+      "buôn lậu": 0.5,
+      "biên phòng": 0.7,
+      "hải quân": 0.7,
+      "không quân": 0.7,
+      "lục quân": 0.7,
+      "cảnh sát biển": 0.7,
+      "công nghiệp quốc phòng": 0.7,
+      "sĩ quan": 0.6,
+      "quân nhân": 0.6,
+      "bộ quốc phòng": 0.8
+    },
+    "Ngoại giao / Quan hệ quốc tế": {
+      "ngoại giao": 1.0,
+      "quan hệ quốc tế": 1.0,
+      "song phương": 0.7,
+      "đa phương": 0.7,
+      "đại sứ": 0.7,
+      "đại sứ quán": 0.7,
+      "lãnh sự": 0.6,
+      "hiệp định": 0.6,
+      "thượng đỉnh": 0.7,
+      "hội nghị quốc tế": 0.7,
+      "liên hợp quốc": 0.7,
+      "asean": 0.7,
+      "apec": 0.6,
+      "đàm phán": 0.5,
+      "viện trợ": 0.5,
+      "hợp tác quốc tế": 0.7,
+      "kiều bào": 0.6,
+      "người việt ở nước ngoài": 0.6,
+      "thăm chính thức": 0.6,
+      "nguyên thủ": 0.6,
+      "chính sách đối ngoại": 0.7,
+      "bộ ngoại giao": 0.8,
+      "công hàm": 0.6,
+      "quan hệ song phương": 0.8
+    },
     "Môi trường": {
       "môi trường": 1.0,
       "biến đổi khí hậu": 0.9,
@@ -346,6 +400,16 @@
       "prefer": "Giải trí / Văn hóa",
       "over": "Giáo dục",
       "note": "Bài viết về triển lãm/sự kiện nghệ thuật thường mô tả đối tượng tham quan là học sinh, sinh viên, gây trùng từ khóa với Giáo dục, nhưng đó chỉ là bối cảnh phụ, không phải nội dung cốt lõi; Giáo dục chỉ nên thắng khi có tín hiệu học thuật/đào tạo rõ ràng (tuyển sinh, kỳ thi, chương trình học)."
+    },
+    {
+      "prefer": "Quốc phòng / An ninh",
+      "over": "Thời sự / Xã hội",
+      "note": "Tin quốc phòng/an ninh (diễn tập, biên giới, chủ quyền biển đảo) thường mang khung tường thuật xã hội chung, trùng từ khóa Thời sự (an ninh, công an, cảnh sát, trật tự), nhưng Quốc phòng/An ninh chỉ nên thắng khi có tín hiệu rõ ràng về quân sự/quốc gia (quân đội, quân khu, chủ quyền, biên giới); tin an ninh trật tự đời thường ở địa phương (tai nạn, cháy nổ, vụ việc dân sự) vẫn thuộc Thời sự/Xã hội."
+    },
+    {
+      "prefer": "Ngoại giao / Quan hệ quốc tế",
+      "over": "Chính trị / Pháp luật",
+      "note": "Tin ngoại giao (thăm chính thức, hội nghị quốc tế, ký hiệp định) thường nhắc chính phủ, thủ tướng, bộ trưởng trùng từ khóa Chính trị/Pháp luật, nhưng Ngoại giao chỉ nên thắng khi trọng tâm là quan hệ đối ngoại/quốc tế (song phương, đa phương, đại sứ quán, tổ chức quốc tế); tin đối nội (luật, nghị định, xét xử trong nước) vẫn thuộc Chính trị/Pháp luật."
     }
   ],
   "default_genre": "Thời sự / Xã hội"

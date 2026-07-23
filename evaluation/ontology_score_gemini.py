@@ -19,9 +19,9 @@ load_dotenv()
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_CSV    = os.path.join(BASE_DIR, "..", "data",     "sample50.csv")
 OBO_PATH    = os.path.join(BASE_DIR, "..", "ontology", "persona_analysis_3.obo")
-CQ_JSON_DEFAULT = os.path.join(BASE_DIR, "cq_validation_results_gemini_2.json")
-OUT_JSON    = os.path.join(BASE_DIR, "ontology_score_results_gemini_2.json")
-OUT_MD      = os.path.join(BASE_DIR, "ontology_score_report_gemini_2.md")
+CQ_JSON_DEFAULT = os.path.join(BASE_DIR, "cq_validation_results_gemini.json")
+OUT_JSON    = os.path.join(BASE_DIR, "ontology_score_results_gemini.json")
+OUT_MD      = os.path.join(BASE_DIR, "ontology_score_report_gemini.md")
 
 MODEL_NAME = "gemini-3.1-flash-lite"
 

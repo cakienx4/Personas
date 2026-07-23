@@ -16,14 +16,9 @@ from pipeline.prompt_builder import build_prompt
 
 SUMMARY_MODEL_NAME = "gemini-3.1-flash-lite"
 
-MAX_RETRY_ATTEMPTS = 5  # số lần retry tối đa cho lỗi tạm thời
+MAX_RETRY_ATTEMPTS = 5
 
 def retry_generate(func, *args, **kwargs):
-    """
-    Gọi lại hàm khi gặp lỗi tạm thời từ Gemini API (429 quota, 503 server busy).
-    Giới hạn tối đa MAX_RETRY_ATTEMPTS lần — sau đó raise lỗi thay vì lặp vô hạn,
-    tránh treo thread mãi mãi khi quota cạn kiệt kéo dài hoặc server down lâu.
-    """
     attempt = 0
     while True:
         try:
