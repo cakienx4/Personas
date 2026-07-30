@@ -25,14 +25,10 @@ API_KEY    = "EMPTY"
 
 SUMMARY_MODEL_NAME = MODEL_NAME
 
-MAX_RETRY_ATTEMPTS = 5  # đồng bộ với summarizer_gemini.py — tránh retry vô hạn khi endpoint lỗi kéo dài
+MAX_RETRY_ATTEMPTS = 5
 
 
 def get_client() -> OpenAI:
-    """
-    Khởi tạo OpenAI-compatible client trỏ tới endpoint gpt-oss-120b trên RunAI.
-    Endpoint yêu cầu httpx.Client(verify=False) và timeout=180.
-    """
     return OpenAI(
         api_key=API_KEY,
         base_url=f"{OSS_HOST}/v1",
@@ -42,10 +38,6 @@ def get_client() -> OpenAI:
 
 
 def retry_generate(func, *args, **kwargs):
-    """
-    Gọi lại hàm khi gặp lỗi tạm thời từ endpoint gpt-oss-120b (rate limit, quá tải).
-    Giới hạn tối đa MAX_RETRY_ATTEMPTS lần — sau đó raise lỗi thay vì lặp vô hạn.
-    """
     attempt = 0
     while True:
         try:
@@ -73,10 +65,6 @@ def retry_generate(func, *args, **kwargs):
 def summarize_person(row: dict, text: str, g, client: OpenAI,
                       model_name: str = SUMMARY_MODEL_NAME,
                       extra_instruction: str = "") -> dict:
-    """
-    Sinh tóm tắt cá nhân hóa cho một person (row) dựa trên văn bản đầu vào (text)
-    và đồ thị ontology (g), dùng model gpt-oss-120b.
-    """
     community = determine_community(row)
     worlds = build_worlds(row)
     prompt = build_prompt(row, text, g)

@@ -1,5 +1,5 @@
 from rdflib import Graph, Namespace
-
+from pathlib import Path
 BASE = Namespace("http://purl.obolibrary.org/obo/persona#")
 
 HARD_BRANCHES = ["professional_persona", "skills_and_expertise"]
@@ -41,6 +41,7 @@ REL_LABELS = {
 
 def load_graph(ttl_path: str) -> Graph:
     g = Graph()
+    ttl_path = Path(ttl_path).resolve().as_uri()
     g.parse(ttl_path, format='turtle')
     return g
 
