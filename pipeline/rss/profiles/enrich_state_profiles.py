@@ -12,11 +12,11 @@ import time
 import os
 from google import genai
 from dotenv import load_dotenv
-from generate_state_profiles import save_csv
+from pipeline.rss.profiles.generate_state_profiles import save_csv
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent
-DATA_DIR = BASE_DIR.parent.parent / "data"
+ROOT_DIR = Path(__file__).resolve().parents[3]
+DATA_DIR = ROOT_DIR / "data"
 
 load_dotenv()
 API_KEY = os.getenv("API_KEY")

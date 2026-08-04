@@ -13,8 +13,8 @@ trong toàn project.
 import json
 import os
 
-_TYPES_PATH  = os.path.join(os.path.dirname(__file__), "..", "config", "article_types.json")
-_GENRES_PATH = os.path.join(os.path.dirname(__file__), "..", "config", "article_genres.json")
+_TYPES_PATH  = os.path.join(os.path.dirname(__file__), "../..", "config", "article_types.json")
+_GENRES_PATH = os.path.join(os.path.dirname(__file__), "../..", "config", "article_genres.json")
 
 with open(_TYPES_PATH, encoding="utf-8") as f:
     _TYPE_DATA = json.load(f)

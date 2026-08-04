@@ -1,11 +1,11 @@
 from fastapi import HTTPException
 
-from pipeline.community import determine_community
-from pipeline.worlds import build_worlds
+from pipeline.civilian.community import determine_community
+from pipeline.civilian.worlds import build_worlds
 from pipeline.content_classifier import classify_content
 from pipeline.relevance import score_text_relevance
-from pipeline.prompt_builder import build_neutral_prompt, build_brief_prompt
-from pipeline.generation import generate_with_length_limit, generate_specific_with_length_limit
+from pipeline.civilian.prompt_builder import build_neutral_prompt, build_brief_prompt
+from pipeline.civilian.generation import generate_with_length_limit, generate_specific_with_length_limit
 
 from api.dependencies import app_state, get_persona_row
 from api.engines import ENGINES, build_generate_fn_kwargs

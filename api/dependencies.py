@@ -11,7 +11,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from pipeline.ontology_context import load_graph
-from pipeline.summarizer_gpt import get_client as get_gpt_client
+from pipeline.civilian.summarizer_gpt import get_client as get_gpt_client
 from api.config import settings
 
 DATA_CSV = PROJECT_ROOT / "data" / "sample50.csv"

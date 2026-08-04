@@ -14,9 +14,9 @@ from types import SimpleNamespace
 from dotenv import load_dotenv
 from openai import OpenAI
 
-from pipeline.community import determine_community
-from pipeline.worlds import build_worlds
-from pipeline.prompt_builder import build_prompt
+from pipeline.civilian.community import determine_community
+from pipeline.civilian.worlds import build_worlds
+from pipeline.civilian.prompt_builder import build_prompt
 
 # Nạp biến môi trường từ file .env
 load_dotenv()

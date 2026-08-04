@@ -14,9 +14,9 @@ from types import SimpleNamespace
 import httpx
 from openai import OpenAI
 
-from pipeline.community import determine_community
-from pipeline.worlds import build_worlds
-from pipeline.prompt_builder import build_prompt
+from pipeline.civilian.community import determine_community
+from pipeline.civilian.worlds import build_worlds
+from pipeline.civilian.prompt_builder import build_prompt
 
 # ── CẤU HÌNH MODEL  ─────────────────────────────
 OSS_HOST   = "https://text-sum-gpt-oss-120b-runai-text-sum.runai-inference.cyberspace.vn"
@@ -25,15 +25,18 @@ API_KEY    = "EMPTY"
 
 SUMMARY_MODEL_NAME = MODEL_NAME
 
-MAX_RETRY_ATTEMPTS = 5
+MAX_RETRY_ATTEMPTS = 3
 
 
 def get_client() -> OpenAI:
     return OpenAI(
         api_key=API_KEY,
         base_url=f"{OSS_HOST}/v1",
-        http_client=httpx.Client(verify=False),
-        timeout=180,
+        http_client=httpx.Client(
+            verify=False,
+            timeout=httpx.Timeout(connect=10.0, read=900.0, write=60.0, pool=10.0),
+        ),
+        max_retries=0,  # tu quan ly retry o retry_generate ben duoi, tranh retry chong cheo voi SDK
     )
 
 
@@ -56,6 +59,20 @@ def retry_generate(func, *args, **kwargs):
                 match = re.search(r"retry in ([0-9.]+)s", msg, re.IGNORECASE)
                 wait = float(match.group(1)) + 2 if match else 35
                 print(f"\nRate limit. Đợi {wait:.1f}s... (lần {attempt}/{MAX_RETRY_ATTEMPTS})")
+                time.sleep(wait)
+                continue
+
+            if any(k in msg for k in ("429", "rate", "RESOURCE_EXHAUSTED", "overloaded")):
+                match = re.search(r"retry in ([0-9.]+)s", msg, re.IGNORECASE)
+                wait = float(match.group(1)) + 2 if match else 35
+                print(f"\nRate limit. Đợi {wait:.1f}s... (lần {attempt}/{MAX_RETRY_ATTEMPTS})")
+                time.sleep(wait)
+                continue
+
+            if any(k in msg.lower() for k in ("timeout", "timed out")):
+                wait = 20 * attempt  # backoff tang dan: 20s, 40s, 60s, 80s, 100s
+                print(f"\nRequest timed out (model cham hoac prompt qua dai). "
+                      f"Đợi {wait}s rồi thử lại... (lần {attempt}/{MAX_RETRY_ATTEMPTS})")
                 time.sleep(wait)
                 continue
 

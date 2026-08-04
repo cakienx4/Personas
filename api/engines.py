@@ -5,8 +5,7 @@ Bảng cấu hình engine dùng chung cho toàn bộ api/ — tránh duplicate g
 summary_service.py (1 văn bản) và multi_summary_service.py (nhiều văn bản).
 """
 
-from pipeline import summarizer_gemini
-from pipeline import summarizer_gpt
+from pipeline.civilian import summarizer_gemini, summarizer_gpt
 
 ENGINES = {
     "gemini": {

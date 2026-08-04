@@ -154,7 +154,7 @@ if __name__ == "__main__":
     import pandas as pd
     import json
 
-    df = pd.read_csv("../data/sample50.csv")
+    df = pd.read_csv("../../data/sample50.csv")
 
     for i in [2, 5, 15]:
         row = df.iloc[i].to_dict()

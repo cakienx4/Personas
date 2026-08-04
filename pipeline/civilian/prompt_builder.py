@@ -1,7 +1,7 @@
-from pipeline.community import determine_community, INTENSITY_HIGH_THRESHOLD
-from pipeline.worlds import build_worlds
-from pipeline.ontology_context import build_ontology_context, load_graph
-from pipeline.content_classifier import classify_content
+from pipeline.civilian.community import determine_community, INTENSITY_HIGH_THRESHOLD
+from pipeline.civilian.worlds import build_worlds
+from pipeline.civilian.ontology_context import build_ontology_context, load_graph
+from pipeline.civilian.content_classifier import classify_content
 
 TYPE_INSTRUCTIONS = {
     "Tin tức": "Giữ đúng trình tự thời gian và các yếu tố chính (ai, gì, khi nào, ở đâu, vì sao) của sự kiện.",
@@ -272,7 +272,7 @@ if __name__ == "__main__":
     import pandas as pd
 
     g = load_graph("../ontology/persona_analysis_3.ttl")
-    df = pd.read_csv("../data/sample50.csv")
+    df = pd.read_csv("../../data/sample50.csv")
 
     sample_text = """Lễ hội pháo hoa quốc tế Đà Nẵng năm nay dự kiến diễn ra từ ngày 31/5 đến 12/7,
 với sự tham gia của 8 đội đến từ các quốc gia như Ý, Úc, Mỹ, Phần Lan và Việt Nam.

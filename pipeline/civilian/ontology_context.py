@@ -131,7 +131,7 @@ def build_ontology_context(g: Graph, branches: list = None) -> str:
 # ── TEST ──────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    g = load_graph("../ontology/persona_analysis_3.ttl")
+    g = load_graph("../../ontology/persona_analysis_3.ttl")
     context = build_ontology_context(g)
     print(context)
     print(f"\n--- Tổng độ dài context: {len(context)} ký tự ---")

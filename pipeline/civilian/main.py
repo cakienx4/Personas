@@ -36,19 +36,19 @@ from google.genai import types
 
 load_dotenv()
 
-PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-from pipeline.community import determine_community
-from pipeline.worlds import build_worlds
+from pipeline.civilian.community import determine_community
+from pipeline.civilian.worlds import build_worlds
 from pipeline.content_classifier import classify_content
 from pipeline.ontology_context import load_graph, build_ontology_context
-from pipeline.prompt_builder import build_prompt, build_neutral_prompt, build_brief_prompt
-from pipeline.summarizer_gemini import summarize_person, retry_generate, SUMMARY_MODEL_NAME
+from pipeline.civilian.prompt_builder import build_prompt, build_neutral_prompt, build_brief_prompt
+from pipeline.civilian.summarizer_gemini import summarize_person, retry_generate, SUMMARY_MODEL_NAME
 from pipeline.text_store import load_custom_texts
 from pipeline.relevance import score_text_relevance
-from pipeline.generation import (
+from pipeline.civilian.generation import (
     generate_with_length_limit,
     generate_specific_with_length_limit,
 )

@@ -10,7 +10,6 @@ import sys
 import time
 import traceback
 from datetime import datetime
-import re
 import pandas as pd
 from dotenv import load_dotenv
 from google import genai
@@ -20,7 +19,7 @@ if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
 from pipeline.ontology_context import load_graph
-from pipeline.summarizer_gemini import summarize_person, retry_generate
+from pipeline.civilian.summarizer_gemini import summarize_person, retry_generate
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_CSV = os.path.join(BASE_DIR, "..", "data", "sample50.csv")

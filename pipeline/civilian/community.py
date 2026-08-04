@@ -77,7 +77,7 @@ def get_topic(occupation: str, age: int, row: dict = None) -> dict:
 
 
 _DOMAIN_KEYWORDS_PATH = os.path.join(
-    os.path.dirname(__file__), "..", "data", "domain_keywords.json"
+    os.path.dirname(__file__), "../..", "data", "domain_keywords.json"
 )
 
 with open(_DOMAIN_KEYWORDS_PATH, encoding="utf-8") as f:
@@ -243,7 +243,7 @@ if __name__ == "__main__":
     import pandas as pd
     import json
 
-    df = pd.read_csv("../data/sample50.csv")
+    df = pd.read_csv("../../data/sample50.csv")
 
     for i in [2, 5, 15]:  # bà Nga, người buôn bán, freelancer
         row = df.iloc[i].to_dict()

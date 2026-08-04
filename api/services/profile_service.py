@@ -1,5 +1,5 @@
-from pipeline.community import determine_community
-from pipeline.worlds import build_worlds
+from pipeline.civilian.community import determine_community
+from pipeline.civilian.worlds import build_worlds
 
 from api.dependencies import get_persona_row
 

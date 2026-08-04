@@ -10,9 +10,9 @@ import time
 
 from google import genai
 
-from pipeline.community import determine_community
-from pipeline.worlds import build_worlds
-from pipeline.prompt_builder import build_prompt
+from pipeline.civilian.community import determine_community
+from pipeline.civilian.worlds import build_worlds
+from pipeline.civilian.prompt_builder import build_prompt
 
 SUMMARY_MODEL_NAME = "gemini-3.1-flash-lite"
 

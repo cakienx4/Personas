@@ -30,11 +30,8 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-from pipeline.community import determine_community
-from pipeline.worlds import build_worlds
 from pipeline.ontology_context import load_graph, build_ontology_context
-from pipeline.prompt_builder import build_prompt
-from pipeline.summarizer_gpt import summarize_person, retry_generate, get_client, MODEL_NAME
+from pipeline.civilian.summarizer_gpt import summarize_person, retry_generate, get_client, MODEL_NAME
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_CSV = os.path.join(BASE_DIR, "..", "data", "sample50.csv")
